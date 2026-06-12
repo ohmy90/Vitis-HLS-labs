@@ -1,0 +1,6 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../matrixmul_test.cpp in debug mode
+   Compiling ../../../../../matrixmul.cpp in debug mode
+   Generating csim.exe
+INFO: [SIM 1] CSim file generation done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

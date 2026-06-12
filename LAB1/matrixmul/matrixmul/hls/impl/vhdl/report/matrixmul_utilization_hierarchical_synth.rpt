@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Jun 12 17:22:02 2026
+| Host         : BR_DUONG running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/matrixmul_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7a35tfgg484-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------------------------+-----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                          Instance                         |                              Module                             | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------------------------------------+-----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                              |                                                           (top) |        265 |        265 |       0 |    0 | 144 |      0 |      0 |          0 |
+|   bd_0_i                                                  |                                                            bd_0 |        265 |        265 |       0 |    0 | 144 |      0 |      0 |          0 |
+|     hls_inst                                              |                                                 bd_0_hls_inst_0 |        265 |        265 |       0 |    0 | 144 |      0 |      0 |          0 |
+|       U0                                                  |                                       bd_0_hls_inst_0_matrixmul |        265 |        265 |       0 |    0 | 144 |      0 |      0 |          0 |
+|         mul_8s_8s_16_1_1_U1                               |                      bd_0_hls_inst_0_matrixmul_mul_8s_8s_16_1_1 |         58 |         58 |       0 |    0 |   0 |      0 |      0 |          0 |
+|         mac_muladd_8s_8s_16s_16_4_1_U2                    |           bd_0_hls_inst_0_matrixmul_mac_muladd_8s_8s_16s_16_4_1 |         80 |         80 |       0 |    0 |  48 |      0 |      0 |          0 |
+|           matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U | bd_0_hls_inst_0_matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_1 |         80 |         80 |       0 |    0 |  48 |      0 |      0 |          0 |
+|         mac_muladd_8s_8s_16s_16_4_1_U3                    |         bd_0_hls_inst_0_matrixmul_mac_muladd_8s_8s_16s_16_4_1_0 |         77 |         77 |       0 |    0 |  48 |      0 |      0 |          0 |
+|           matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U |   bd_0_hls_inst_0_matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0 |         77 |         77 |       0 |    0 |  48 |      0 |      0 |          0 |
++-----------------------------------------------------------+-----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

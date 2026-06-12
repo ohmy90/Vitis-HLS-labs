@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\matrixmul.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/12/26 17:18:36",
+ "timestampMillis": "1781299116012",
+ "buildStep": {
+  "cmdId": "ea4b5b3f-0856-4f30-b5d4-ce2fe936e117",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "D:/movies/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 17:18:36",
+ "timestampMillis": "1781299116013",
+ "status": {
+  "cmdId": "ea4b5b3f-0856-4f30-b5d4-ce2fe936e117",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/12/26 17:18:41",
+ "timestampMillis": "1781299121574",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\matrixmul.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul.cpp",
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/12/26 17:18:41",
+ "timestampMillis": "1781299121576",
+ "buildStep": {
+  "cmdId": "332fd1d3-f77a-4dbc-ac57-f5ace9fead82",
+  "name": "",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 17:18:41",
+ "timestampMillis": "1781299121577",
+ "status": {
+  "cmdId": "332fd1d3-f77a-4dbc-ac57-f5ace9fead82",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 17:18:57",
+ "timestampMillis": "1781299137438",
+ "status": {
+  "cmdId": "332fd1d3-f77a-4dbc-ac57-f5ace9fead82",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 17:18:57",
+ "timestampMillis": "1781299137568",
+ "status": {
+  "cmdId": "ea4b5b3f-0856-4f30-b5d4-ce2fe936e117",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 17:18:57",
+ "timestampMillis": "1781299137568",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 17:18:57",
+ "timestampMillis": "1781299137569",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

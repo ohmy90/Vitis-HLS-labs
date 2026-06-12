@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\matrixmul.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/12/26 16:05:36",
+ "timestampMillis": "1781294736600",
+ "buildStep": {
+  "cmdId": "610e52a8-0ce2-4916-94b4-46e8ebd2efb2",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "D:/movies/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls-debug.cfg --config C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls-debug.cfg",
+   "--config",
+   "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:05:36",
+ "timestampMillis": "1781294736600",
+ "status": {
+  "cmdId": "610e52a8-0ce2-4916-94b4-46e8ebd2efb2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/12/26 16:05:40",
+ "timestampMillis": "1781294740767",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul.cpp",
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/12/26 16:05:40",
+ "timestampMillis": "1781294740768",
+ "buildStep": {
+  "cmdId": "a775c1da-e39a-42b1-8aa4-eee0dbf7d0d2",
+  "name": "",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:05:40",
+ "timestampMillis": "1781294740768",
+ "status": {
+  "cmdId": "a775c1da-e39a-42b1-8aa4-eee0dbf7d0d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:05:42",
+ "timestampMillis": "1781294742215",
+ "status": {
+  "cmdId": "a775c1da-e39a-42b1-8aa4-eee0dbf7d0d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:05:42",
+ "timestampMillis": "1781294742295",
+ "status": {
+  "cmdId": "610e52a8-0ce2-4916-94b4-46e8ebd2efb2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:05:42",
+ "timestampMillis": "1781294742296",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:05:42",
+ "timestampMillis": "1781294742296",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

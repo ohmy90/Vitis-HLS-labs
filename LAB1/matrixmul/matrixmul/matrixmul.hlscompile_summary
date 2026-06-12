@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\matrixmul.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/12/26 16:17:20",
+ "timestampMillis": "1781295440545",
+ "buildStep": {
+  "cmdId": "00dbec40-bb98-4e7e-9e2c-06d7ae53a65e",
+  "name": "v++",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "D:/movies/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\hls_config.cfg",
+    "content": "part=xc7a35tfgg484-2\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=matrixmul\nsyn.file=C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab1/matrixmul.cpp\nsyn.file=C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab1/matrixmul.h\ntb.file=C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab1/matrixmul_test.cpp\ntb.file_cflags=C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab1/matrixmul_test.cpp,-DHW_COSIM\nclock=10"
+   }
+  ],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:17:20",
+ "timestampMillis": "1781295440545",
+ "status": {
+  "cmdId": "00dbec40-bb98-4e7e-9e2c-06d7ae53a65e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/12/26 16:17:25",
+ "timestampMillis": "1781295445056",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul.cpp",
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/12/26 16:17:25",
+ "timestampMillis": "1781295445057",
+ "buildStep": {
+  "cmdId": "908205b7-5dfd-4a5d-9980-03edbc432991",
+  "name": "",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:17:25",
+ "timestampMillis": "1781295445058",
+ "status": {
+  "cmdId": "908205b7-5dfd-4a5d-9980-03edbc432991",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:25",
+ "timestampMillis": "1781295445058",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:25",
+ "timestampMillis": "1781295445059",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:25",
+ "timestampMillis": "1781295445059",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475579",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475579",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475580",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475580",
+ "status": {
+  "cmdId": "908205b7-5dfd-4a5d-9980-03edbc432991",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475672",
+ "status": {
+  "cmdId": "00dbec40-bb98-4e7e-9e2c-06d7ae53a65e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475726",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\reports\\v++_compile_matrixmul_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/12/26 16:17:55",
+ "timestampMillis": "1781295475727",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab1\\matrixmul\\matrixmul\\reports\\.db\\v++_compile_matrixmul_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
