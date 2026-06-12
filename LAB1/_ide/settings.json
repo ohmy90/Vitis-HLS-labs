@@ -1,0 +1,8 @@
+{
+    "clangd.fallbackFlags": [
+        "-ID:\\movies\\2025.2\\Vitis\\include",
+        "-ID:\\movies\\2025.2\\Vitis\\include\\etc",
+        "-ID:\\movies\\2025.2\\Vitis\\win64\\tools\\auto_cc\\include"
+    ],
+    "TCFAdapter.steppingGranularity": "instruction"
+}
