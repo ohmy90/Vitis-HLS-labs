@@ -1,0 +1,68 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv_filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yuv_filter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:77:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:78:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:81:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:82:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:119:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:120:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:123:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:124:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:161:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:162:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:165:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../yuv_filter.c:166:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../yuv_filter.c:122:7" msg_body="Loop 'YUV2RGB_LOOP_Y' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="YUV2RGB_LOOP_Y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../yuv_filter.c:164:7" msg_body="Loop 'YUV_SCALE_LOOP_Y' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="YUV_SCALE_LOOP_Y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../yuv_filter.c:80:7" msg_body="Loop 'RGB2YUV_LOOP_Y' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="RGB2YUV_LOOP_Y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../yuv_filter.c:38:0" msg_body="Inlining function 'rgb2yuv' into 'yuv_filter'">
+        <args Callee="rgb2yuv" Callee-DebugLoc="File ../yuv_filter.c Line 60 Column 0" Caller="yuv_filter" Caller-DebugLoc="File ../yuv_filter.c Line 38 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../yuv_filter.c:38:0" msg_body="Inlining function 'yuv_scale' into 'yuv_filter'">
+        <args Callee="yuv_scale" Callee-DebugLoc="File ../yuv_filter.c Line 148 Column 0" Caller="yuv_filter" Caller-DebugLoc="File ../yuv_filter.c Line 38 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../yuv_filter.c:38:0" msg_body="Inlining function 'yuv2rgb' into 'yuv_filter'">
+        <args Callee="yuv2rgb" Callee-DebugLoc="File ../yuv_filter.c Line 100 Column 0" Caller="yuv_filter" Caller-DebugLoc="File ../yuv_filter.c Line 38 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../yuv_filter.c:122:7" msg_body="Cannot unroll loop 'YUV2RGB_LOOP_Y' (../yuv_filter.c:122:7) in function 'yuv_filter' as it has a variable trip count">
+        <args LoopLoc="../yuv_filter.c:122:7" LoopName="YUV2RGB_LOOP_Y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../yuv_filter.c:164:7" msg_body="Cannot unroll loop 'YUV_SCALE_LOOP_Y' (../yuv_filter.c:164:7) in function 'yuv_filter' as it has a variable trip count">
+        <args LoopLoc="../yuv_filter.c:164:7" LoopName="YUV_SCALE_LOOP_Y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="../yuv_filter.c:80:7" msg_body="Cannot unroll loop 'RGB2YUV_LOOP_Y' (../yuv_filter.c:80:7) in function 'yuv_filter' as it has a variable trip count">
+        <args LoopLoc="../yuv_filter.c:80:7" LoopName="RGB2YUV_LOOP_Y"/>
+    </msg>
+</xilinx:hls_fe_msgs>

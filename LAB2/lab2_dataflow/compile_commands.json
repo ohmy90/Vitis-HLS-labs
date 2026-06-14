@@ -1,0 +1,40 @@
+[
+  {
+    "directory": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\lab2_dataflow",
+    "arguments": [
+      "D:\\movies\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\movies\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\movies\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=yuv_filter",
+      "-c",
+      "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\image_aux.c"
+    ],
+    "file": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\image_aux.c"
+  },
+  {
+    "directory": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\lab2_dataflow",
+    "arguments": [
+      "D:\\movies\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\movies\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\movies\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=yuv_filter",
+      "-c",
+      "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\yuv_filter.c"
+    ],
+    "file": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\yuv_filter.c"
+  },
+  {
+    "directory": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\lab2_dataflow",
+    "arguments": [
+      "D:\\movies\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\movies\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\movies\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\yuv_filter_test.c"
+    ],
+    "file": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab2\\yuv_filter_test.c"
+  }
+]

@@ -1,0 +1,329 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 51, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: ../yuv_filter.c, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 52, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv_scale
+    DebugLoc:        { File: ../yuv_filter.c, Line: 152, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 53, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: ../yuv_filter.c, Line: 104, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out_channels
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in_channels
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 126, Column: 7 }
+Function:        yuv2rgb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 168, Column: 7 }
+Function:        yuv_scale
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 84, Column: 7 }
+Function:        rgb2yuv
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 51, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: ../yuv_filter.c, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 52, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv_scale
+    DebugLoc:        { File: ../yuv_filter.c, Line: 152, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 53, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: ../yuv_filter.c, Line: 104, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_yuv_filter_ir
+Args:            
+  - Callee:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_yuv_filter_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 126, Column: 7 }
+Function:        yuv2rgb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 168, Column: 7 }
+Function:        yuv_scale
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 84, Column: 7 }
+Function:        rgb2yuv
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 126, Column: 7 }
+Function:        yuv2rgb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 168, Column: 7 }
+Function:        yuv_scale
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 84, Column: 7 }
+Function:        rgb2yuv
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 126, Column: 7 }
+Function:        yuv2rgb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 168, Column: 7 }
+Function:        yuv_scale
+Args:            
+  - String:          'Loop '''
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 84, Column: 7 }
+Function:        rgb2yuv
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 126, Column: 7 }
+Function:        yuv2rgb
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ''' ('
+  - LoopLoc:         '../yuv_filter.c:126:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yuv2rgb
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 168, Column: 7 }
+Function:        yuv_scale
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          ''' ('
+  - LoopLoc:         '../yuv_filter.c:168:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yuv_scale
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: ../yuv_filter.c, Line: 84, Column: 7 }
+Function:        rgb2yuv
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ''' ('
+  - LoopLoc:         '../yuv_filter.c:84:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rgb2yuv
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 51, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: ../yuv_filter.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 52, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv_scale
+    DebugLoc:        { File: ../yuv_filter.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../yuv_filter.c, Line: 53, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: ../yuv_filter.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: ../yuv_filter.c, Line: 38, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

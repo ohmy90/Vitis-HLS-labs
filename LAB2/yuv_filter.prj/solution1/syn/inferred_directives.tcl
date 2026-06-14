@@ -1,0 +1,4 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline yuv_filter/RGB2YUV_LOOP_Y
+set_directive_pipeline yuv_filter/YUV_SCALE_LOOP_Y
+set_directive_pipeline yuv_filter/YUV2RGB_LOOP_Y

@@ -1,0 +1,200 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../image_aux.c' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/image_aux.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../image_aux.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/image_aux.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../yuv_filter.c' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/yuv_filter.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../yuv_filter.h' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/yuv_filter.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../yuv_filter_test.c' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/yuv_filter_test.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=yuv_filter' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tfgg484-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-fgg484-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.214 seconds; current allocated memory: 138.836 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../yuv_filter.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../image_aux.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.333 seconds; current allocated memory: 141.312 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 455 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 326 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 197 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 197 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 183 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 176 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 181 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 179 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 174 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 174 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 200 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 218 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-210] Disaggregating variable 'out'
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'out_channels'
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'in'
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'in_channels'
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'YUV2RGB_LOOP_Y' is marked as complete unroll implied by the pipeline pragma (../yuv_filter.c:122:7)
+INFO: [HLS 214-291] Loop 'YUV_SCALE_LOOP_Y' is marked as complete unroll implied by the pipeline pragma (../yuv_filter.c:164:7)
+INFO: [HLS 214-291] Loop 'RGB2YUV_LOOP_Y' is marked as complete unroll implied by the pipeline pragma (../yuv_filter.c:80:7)
+INFO: [HLS 214-178] Inlining function 'rgb2yuv' into 'yuv_filter' (../yuv_filter.c:38:0)
+INFO: [HLS 214-178] Inlining function 'yuv_scale' into 'yuv_filter' (../yuv_filter.c:38:0)
+INFO: [HLS 214-178] Inlining function 'yuv2rgb' into 'yuv_filter' (../yuv_filter.c:38:0)
+WARNING: [HLS 214-187] Cannot unroll loop 'YUV2RGB_LOOP_Y' (../yuv_filter.c:122:7) in function 'yuv_filter' as it has a variable trip count (../yuv_filter.c:122:7)
+WARNING: [HLS 214-187] Cannot unroll loop 'YUV_SCALE_LOOP_Y' (../yuv_filter.c:164:7) in function 'yuv_filter' as it has a variable trip count (../yuv_filter.c:164:7)
+WARNING: [HLS 214-187] Cannot unroll loop 'RGB2YUV_LOOP_Y' (../yuv_filter.c:80:7) in function 'yuv_filter' as it has a variable trip count (../yuv_filter.c:80:7)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.119 seconds; current allocated memory: 143.285 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 143.285 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 148.359 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 150.090 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'yuv_filter' (../yuv_filter.c:31:7)...9 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 171.648 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'RGB2YUV_LOOP_X'(../yuv_filter.c:76:4) and 'RGB2YUV_LOOP_Y'(../yuv_filter.c:80:7) in function 'yuv_filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'YUV_SCALE_LOOP_X'(../yuv_filter.c:160:4) and 'YUV_SCALE_LOOP_Y'(../yuv_filter.c:164:7) in function 'yuv_filter' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'YUV2RGB_LOOP_X'(../yuv_filter.c:118:4) and 'YUV2RGB_LOOP_Y'(../yuv_filter.c:122:7) in function 'yuv_filter' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'RGB2YUV_LOOP_X' (../yuv_filter.c:76:4) in function 'yuv_filter'.
+INFO: [XFORM 203-541] Flattening a loop nest 'YUV_SCALE_LOOP_X' (../yuv_filter.c:160:4) in function 'yuv_filter'.
+INFO: [XFORM 203-541] Flattening a loop nest 'YUV2RGB_LOOP_X' (../yuv_filter.c:118:4) in function 'yuv_filter'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 192.797 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yuv_filter' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln86_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 196.812 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 197.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 197.949 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 197.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln132_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln131_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln131) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 198.086 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.653 seconds; current allocated memory: 198.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yuv_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 198.688 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 198.871 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' pipeline 'RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_5ns_8ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_16s_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7s_16s_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8s_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 201.645 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' pipeline 'YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_15_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 204.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' pipeline 'YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9ns_8s_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9s_8s_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9s_9ns_8ns_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 206.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yuv_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_channels_ch1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_channels_ch2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_channels_ch3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_width' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/in_height' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_channels_ch1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_channels_ch2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_channels_ch3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_width' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/out_height' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/Y_scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/U_scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yuv_filter/V_scale' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yuv_filter' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_16ns_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yuv_filter'.
+INFO: [RTMG 210-278] Implementing memory 'yuv_filter_p_yuv_channels_ch1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.326 seconds; current allocated memory: 209.633 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.509 seconds; current allocated memory: 214.016 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.378 seconds; current allocated memory: 218.023 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for yuv_filter.
+INFO: [VLOG 209-307] Generating Verilog RTL for yuv_filter.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 145.71 MHz
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 3 seconds. Total elapsed time: 21.739 seconds; peak allocated memory: 218.094 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 26s

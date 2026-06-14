@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'yuv_filter'
+================================================================
+* Date:           Sun Jun 14 00:39:41 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        yuv_filter
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-fgg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.938 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-------+---------+----------+
+    |  Latency (cycles) |  Latency (absolute)  |     Interval    | Pipeline |
+    |   min   |   max   |    min   |    max    |  min  |   max   |   Type   |
+    +---------+---------+----------+-----------+-------+---------+----------+
+    |    40016|  2457616|  0.400 ms|  24.576 ms|  40010|  2457610|  dataflow|
+    +---------+---------+----------+-----------+-------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.62>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%V_scale_c = alloca i64 1" [../yuv_filter.c:55]   --->   Operation 7 'alloca' 'V_scale_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%U_scale_c = alloca i64 1" [../yuv_filter.c:55]   --->   Operation 8 'alloca' 'U_scale_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%Y_scale_c = alloca i64 1" [../yuv_filter.c:55]   --->   Operation 9 'alloca' 'Y_scale_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_yuv_channels_ch1 = alloca i64 1" [../yuv_filter.c:45]   --->   Operation 10 'alloca' 'p_yuv_channels_ch1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.30> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2457600> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_yuv_channels_ch2 = alloca i64 1" [../yuv_filter.c:45]   --->   Operation 11 'alloca' 'p_yuv_channels_ch2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.30> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2457600> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_yuv_channels_ch3 = alloca i64 1" [../yuv_filter.c:45]   --->   Operation 12 'alloca' 'p_yuv_channels_ch3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.30> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2457600> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_yuv_width = alloca i64 1" [../yuv_filter.c:45]   --->   Operation 13 'alloca' 'p_yuv_width' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_yuv_height = alloca i64 1" [../yuv_filter.c:45]   --->   Operation 14 'alloca' 'p_yuv_height' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_scale_channels_ch1 = alloca i64 1" [../yuv_filter.c:46]   --->   Operation 15 'alloca' 'p_scale_channels_ch1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.30> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2457600> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_scale_channels_ch2 = alloca i64 1" [../yuv_filter.c:46]   --->   Operation 16 'alloca' 'p_scale_channels_ch2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.30> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2457600> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_scale_channels_ch3 = alloca i64 1" [../yuv_filter.c:46]   --->   Operation 17 'alloca' 'p_scale_channels_ch3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.30> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2457600> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_scale_width = alloca i64 1" [../yuv_filter.c:46]   --->   Operation 18 'alloca' 'p_scale_width' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_scale_height = alloca i64 1" [../yuv_filter.c:46]   --->   Operation 19 'alloca' 'p_scale_height' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.18> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 20 [2/2] (4.62ns)   --->   "%call_ln51 = call void @rgb2yuv, i16 %in_width, i16 %in_height, i8 %in_channels_ch1, i8 %in_channels_ch2, i8 %in_channels_ch3, i8 %p_yuv_channels_ch1, i8 %p_yuv_channels_ch2, i8 %p_yuv_channels_ch3, i16 %p_yuv_width, i16 %p_yuv_height" [../yuv_filter.c:51]   --->   Operation 20 'call' 'call_ln51' <Predicate = true> <Delay = 4.62> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 3.18>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%V_scale_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %V_scale" [../yuv_filter.c:55]   --->   Operation 21 'read' 'V_scale_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%U_scale_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %U_scale" [../yuv_filter.c:55]   --->   Operation 22 'read' 'U_scale_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%Y_scale_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %Y_scale" [../yuv_filter.c:55]   --->   Operation 23 'read' 'Y_scale_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (3.18ns)   --->   "%call_ln55 = call void @entry_proc, i8 %Y_scale_read, i8 %Y_scale_c, i8 %U_scale_read, i8 %U_scale_c, i8 %V_scale_read, i8 %V_scale_c" [../yuv_filter.c:55]   --->   Operation 24 'call' 'call_ln55' <Predicate = true> <Delay = 3.18> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 25 [1/2] (0.00ns)   --->   "%call_ln51 = call void @rgb2yuv, i16 %in_width, i16 %in_height, i8 %in_channels_ch1, i8 %in_channels_ch2, i8 %in_channels_ch3, i8 %p_yuv_channels_ch1, i8 %p_yuv_channels_ch2, i8 %p_yuv_channels_ch3, i16 %p_yuv_width, i16 %p_yuv_height" [../yuv_filter.c:51]   --->   Operation 25 'call' 'call_ln51' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln52 = call void @yuv_scale, i16 %p_yuv_width, i16 %p_yuv_height, i8 %p_yuv_channels_ch1, i8 %p_yuv_channels_ch2, i8 %p_yuv_channels_ch3, i8 %p_scale_channels_ch1, i8 %p_scale_channels_ch2, i8 %p_scale_channels_ch3, i16 %p_scale_width, i16 %p_scale_height, i8 %Y_scale_c, i8 %U_scale_c, i8 %V_scale_c" [../yuv_filter.c:52]   --->   Operation 26 'call' 'call_ln52' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln52 = call void @yuv_scale, i16 %p_yuv_width, i16 %p_yuv_height, i8 %p_yuv_channels_ch1, i8 %p_yuv_channels_ch2, i8 %p_yuv_channels_ch3, i8 %p_scale_channels_ch1, i8 %p_scale_channels_ch2, i8 %p_scale_channels_ch3, i16 %p_scale_width, i16 %p_scale_height, i8 %Y_scale_c, i8 %U_scale_c, i8 %V_scale_c" [../yuv_filter.c:52]   --->   Operation 27 'call' 'call_ln52' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln53 = call void @yuv2rgb, i16 %p_scale_width, i16 %p_scale_height, i8 %p_scale_channels_ch1, i8 %p_scale_channels_ch2, i8 %p_scale_channels_ch3, i8 %out_channels_ch1, i8 %out_channels_ch2, i8 %out_channels_ch3, i16 %out_width, i16 %out_height" [../yuv_filter.c:53]   --->   Operation 28 'call' 'call_ln53' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 3.18>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @V_scale_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %V_scale_c, i8 %V_scale_c" [../yuv_filter.c:55]   --->   Operation 29 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln55 = specinterface void @_ssdm_op_SpecInterface, i8 %V_scale_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0" [../yuv_filter.c:55]   --->   Operation 30 'specinterface' 'specinterface_ln55' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%empty_16 = specchannel i32 @_ssdm_op_SpecChannel, void @U_scale_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %U_scale_c, i8 %U_scale_c" [../yuv_filter.c:55]   --->   Operation 31 'specchannel' 'empty_16' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln55 = specinterface void @_ssdm_op_SpecInterface, i8 %U_scale_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0" [../yuv_filter.c:55]   --->   Operation 32 'specinterface' 'specinterface_ln55' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%empty_17 = specchannel i32 @_ssdm_op_SpecChannel, void @Y_scale_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %Y_scale_c, i8 %Y_scale_c" [../yuv_filter.c:55]   --->   Operation 33 'specchannel' 'empty_17' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln55 = specinterface void @_ssdm_op_SpecInterface, i8 %Y_scale_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0" [../yuv_filter.c:55]   --->   Operation 34 'specinterface' 'specinterface_ln55' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln55 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1" [../yuv_filter.c:55]   --->   Operation 35 'specdataflowpipeline' 'specdataflowpipeline_ln55' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%spectopmodule_ln31 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty" [../yuv_filter.c:31]   --->   Operation 36 'spectopmodule' 'spectopmodule_ln31' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_channels_ch1, void @empty_2, i32 0, i32 0, void @empty_1, i32 4294967295, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %in_channels_ch1"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_channels_ch2, void @empty_2, i32 0, i32 0, void @empty_1, i32 4294967295, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %in_channels_ch2"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_channels_ch3, void @empty_2, i32 0, i32 0, void @empty_1, i32 4294967295, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %in_channels_ch3"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_width"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_width, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %in_height"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %in_height, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_channels_ch1, void @empty_2, i32 0, i32 0, void @empty_1, i32 4294967295, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %out_channels_ch1"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_channels_ch2, void @empty_2, i32 0, i32 0, void @empty_1, i32 4294967295, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %out_channels_ch2"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_channels_ch3, void @empty_2, i32 0, i32 0, void @empty_1, i32 4294967295, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %out_channels_ch3"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_width"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_width, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %out_height"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %out_height, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %Y_scale"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %Y_scale, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %U_scale"   --->   Operation 59 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %U_scale, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %V_scale"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %V_scale, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (0.00ns)   --->   "%empty_18 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_channels_OC_ch1_OC_channel_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_yuv_channels_ch1, i8 %p_yuv_channels_ch1"   --->   Operation 63 'specchannel' 'empty_18' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_yuv_channels_ch1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%empty_19 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_channels_OC_ch2_OC_channel_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_yuv_channels_ch2, i8 %p_yuv_channels_ch2"   --->   Operation 65 'specchannel' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_yuv_channels_ch2, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%empty_20 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_channels_OC_ch3_OC_channel_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_yuv_channels_ch3, i8 %p_yuv_channels_ch3"   --->   Operation 67 'specchannel' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_yuv_channels_ch3, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%empty_21 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_width_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %p_yuv_width, i16 %p_yuv_width"   --->   Operation 69 'specchannel' 'empty_21' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %p_yuv_width, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%empty_22 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_height_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %p_yuv_height, i16 %p_yuv_height"   --->   Operation 71 'specchannel' 'empty_22' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %p_yuv_height, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%empty_23 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_channels_OC_ch1_OC_channel_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_scale_channels_ch1, i8 %p_scale_channels_ch1"   --->   Operation 73 'specchannel' 'empty_23' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_scale_channels_ch1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 74 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 75 [1/1] (0.00ns)   --->   "%empty_24 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_channels_OC_ch2_OC_channel_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_scale_channels_ch2, i8 %p_scale_channels_ch2"   --->   Operation 75 'specchannel' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_scale_channels_ch2, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "%empty_25 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_channels_OC_ch3_OC_channel_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_scale_channels_ch3, i8 %p_scale_channels_ch3"   --->   Operation 77 'specchannel' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_scale_channels_ch3, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 79 [1/1] (0.00ns)   --->   "%empty_26 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_width_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %p_scale_width, i16 %p_scale_width"   --->   Operation 79 'specchannel' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %p_scale_width, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 80 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%empty_27 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_height_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %p_scale_height, i16 %p_scale_height"   --->   Operation 81 'specchannel' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %p_scale_height, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%empty_28 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_channels_OC_ch1_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_yuv_channels_ch1, i8 %p_yuv_channels_ch1"   --->   Operation 83 'specchannel' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_yuv_channels_ch1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 84 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 85 [1/1] (0.00ns)   --->   "%empty_29 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_channels_OC_ch2_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_yuv_channels_ch2, i8 %p_yuv_channels_ch2"   --->   Operation 85 'specchannel' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_yuv_channels_ch2, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 86 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%empty_30 = specchannel i32 @_ssdm_op_SpecChannel, void @p_yuv_OC_channels_OC_ch3_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_yuv_channels_ch3, i8 %p_yuv_channels_ch3"   --->   Operation 87 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 88 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_yuv_channels_ch3, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 88 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 89 [1/1] (0.00ns)   --->   "%empty_31 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_channels_OC_ch1_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_scale_channels_ch1, i8 %p_scale_channels_ch1"   --->   Operation 89 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 90 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_scale_channels_ch1, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 90 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 91 [1/1] (0.00ns)   --->   "%empty_32 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_channels_OC_ch2_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_scale_channels_ch2, i8 %p_scale_channels_ch2"   --->   Operation 91 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 92 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_scale_channels_ch2, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 92 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 93 [1/1] (0.00ns)   --->   "%empty_33 = specchannel i32 @_ssdm_op_SpecChannel, void @p_scale_OC_channels_OC_ch3_str, i32 1, void @p_str, void @p_str, i32 2457600, i32 2457600, i8 %p_scale_channels_ch3, i8 %p_scale_channels_ch3"   --->   Operation 93 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 94 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %p_scale_channels_ch3, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 94 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 95 [1/2] (3.18ns)   --->   "%call_ln53 = call void @yuv2rgb, i16 %p_scale_width, i16 %p_scale_height, i8 %p_scale_channels_ch1, i8 %p_scale_channels_ch2, i8 %p_scale_channels_ch3, i8 %out_channels_ch1, i8 %out_channels_ch2, i8 %out_channels_ch3, i16 %out_width, i16 %out_height" [../yuv_filter.c:53]   --->   Operation 95 'call' 'call_ln53' <Predicate = true> <Delay = 3.18> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 96 [1/1] (0.00ns)   --->   "%ret_ln57 = ret" [../yuv_filter.c:57]   --->   Operation 96 'ret' 'ret_ln57' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.620ns
+The critical path consists of the following:
+	'alloca' operation 8 bit ('_yuv.channels.ch1', ../yuv_filter.c:45) [54]  (0.000 ns)
+	'call' operation ('call_ln51', ../yuv_filter.c:51) to 'rgb2yuv' [85]  (4.620 ns)
+
+ <State 2>: 3.187ns
+The critical path consists of the following:
+	wire read operation ('V_scale_read', ../yuv_filter.c:55) on port 'V_scale' (../yuv_filter.c:55) [14]  (0.000 ns)
+	'call' operation ('call_ln55', ../yuv_filter.c:55) to 'entry_proc' [84]  (3.187 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 3.187ns
+The critical path consists of the following:
+	'call' operation ('call_ln53', ../yuv_filter.c:53) to 'yuv2rgb' [99]  (3.187 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

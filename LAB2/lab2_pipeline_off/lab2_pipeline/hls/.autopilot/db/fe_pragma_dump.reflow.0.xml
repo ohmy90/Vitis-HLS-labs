@@ -1,0 +1,14 @@
+<pragmas>
+<pragma file="../yuv_filter.c" line="120" pragmaType="pipeline" parentfunction="yuv2rgb" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../yuv_filter.c" line="119" pragmaType="loop_tripcount" parentfunction="yuv2rgb" min="200" max="1920" avg="1060"/>
+<pragma file="../yuv_filter.c" line="123" pragmaType="pipeline" parentfunction="yuv2rgb" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../yuv_filter.c" line="124" pragmaType="loop_tripcount" parentfunction="yuv2rgb" min="200" max="1280" avg="740"/>
+<pragma file="../yuv_filter.c" line="162" pragmaType="pipeline" parentfunction="yuv_scale" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../yuv_filter.c" line="161" pragmaType="loop_tripcount" parentfunction="yuv_scale" min="200" max="1920" avg="1060"/>
+<pragma file="../yuv_filter.c" line="165" pragmaType="pipeline" parentfunction="yuv_scale" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../yuv_filter.c" line="166" pragmaType="loop_tripcount" parentfunction="yuv_scale" min="200" max="1280" avg="740"/>
+<pragma file="../yuv_filter.c" line="78" pragmaType="pipeline" parentfunction="rgb2yuv" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../yuv_filter.c" line="77" pragmaType="loop_tripcount" parentfunction="rgb2yuv" min="200" max="1920" avg="1060"/>
+<pragma file="../yuv_filter.c" line="81" pragmaType="pipeline" parentfunction="rgb2yuv" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../yuv_filter.c" line="82" pragmaType="loop_tripcount" parentfunction="rgb2yuv" min="200" max="1280" avg="740"/>
+</pragmas>

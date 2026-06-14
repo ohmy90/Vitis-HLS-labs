@@ -1,0 +1,4 @@
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten rgb2yuv/RGB2YUV_LOOP_X
+set_directive_loop_flatten yuv2rgb/YUV2RGB_LOOP_X
+set_directive_loop_flatten yuv_scale/YUV_SCALE_LOOP_X

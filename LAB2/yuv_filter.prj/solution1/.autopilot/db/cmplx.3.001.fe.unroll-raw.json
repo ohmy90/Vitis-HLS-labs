@@ -1,0 +1,68 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 3 1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "yuv_filter.c",
+    "fileloc": 30,
+    "instructions": 14,
+    "memory_accesses": 0,
+    "name": "yuv_filter",
+    "total_instructions": 326
+  },
+  "1": {
+    "basicblocks": 28,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 10,
+    "file": "yuv_filter.c",
+    "fileloc": 93,
+    "instructions": 161,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 7,
+    "name": "yuv2rgb",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 161
+  },
+  "2": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 8,
+    "file": "yuv_filter.c",
+    "fileloc": 55,
+    "instructions": 86,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 7,
+    "name": "rgb2yuv",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 86
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "yuv_filter.c",
+    "fileloc": 136,
+    "instructions": 65,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 7,
+    "name": "yuv_scale",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 65
+  }
+}

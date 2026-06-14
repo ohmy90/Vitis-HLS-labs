@@ -1,0 +1,2503 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a35t-fgg484-2</Part>
+        <TopModelName>yuv_filter</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.938</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>40016</Best-caseLatency>
+            <Average-caseLatency>784416</Average-caseLatency>
+            <Worst-caseLatency>2457616</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>
+                <range>
+                    <min>40010</min>
+                    <max>2457610</max>
+                </range>
+            </DataflowPipelineThroughput>
+            <Interval-min>40010</Interval-min>
+            <Interval-max>2457610</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../yuv_filter.c:55</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>12288</BRAM_18K>
+            <DSP>11</DSP>
+            <FF>2509</FF>
+            <LUT>2675</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>90</DSP>
+            <FF>41600</FF>
+            <LUT>20800</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>in_channels_ch1_address0</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_ce0</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_d0</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_q0</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_we0</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_address1</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_ce1</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_d1</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_q1</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch1_we1</name>
+            <Object>in_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_address0</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_ce0</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_d0</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_q0</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_we0</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_address1</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_ce1</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_d1</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_q1</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch2_we1</name>
+            <Object>in_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_address0</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_ce0</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_d0</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_q0</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_we0</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_address1</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_ce1</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_d1</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_q1</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_channels_ch3_we1</name>
+            <Object>in_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_width</name>
+            <Object>in_width</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_height</name>
+            <Object>in_height</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_address0</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_ce0</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_d0</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_q0</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_we0</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_address1</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_ce1</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_d1</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_q1</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch1_we1</name>
+            <Object>out_channels_ch1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_address0</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_ce0</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_d0</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_q0</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_we0</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_address1</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_ce1</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_d1</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_q1</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch2_we1</name>
+            <Object>out_channels_ch2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_address0</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_ce0</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_d0</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_q0</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_we0</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_address1</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>22</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_ce1</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_d1</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_q1</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_channels_ch3_we1</name>
+            <Object>out_channels_ch3</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_width</name>
+            <Object>out_width</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_width_ap_vld</name>
+            <Object>out_width</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_height</name>
+            <Object>out_height</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_height_ap_vld</name>
+            <Object>out_height</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Y_scale</name>
+            <Object>Y_scale</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>uint</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>U_scale</name>
+            <Object>U_scale</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>uint</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>V_scale</name>
+            <Object>V_scale</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>uint</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>yuv_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>yuv_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>yuv_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>yuv_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>yuv_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>yuv_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>yuv_filter</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>rgb2yuv_U0</InstName>
+                    <ModuleName>rgb2yuv</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>182</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_rgb2yuv_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y_fu_76</InstName>
+                            <ModuleName>rgb2yuv_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>76</ID>
+                            <BindInstances>icmp_ln80_fu_220_p2 add_ln80_1_fu_226_p2 add_ln80_fu_243_p2 icmp_ln84_fu_249_p2 select_ln82_fu_254_p3 select_ln80_fu_262_p3 mac_muladd_8ns_5ns_15s_15_4_1_U7 mac_muladd_8ns_5ns_15s_15_4_1_U7 mac_muladd_8ns_5ns_15s_15_4_1_U7 p_yuv_channels_ch1_din sub_ln91_fu_431_p2 mac_muladd_8ns_7s_8ns_15_4_1_U8 mac_muladd_8ns_8s_16s_16_4_1_U10 mac_muladd_8ns_7s_8ns_15_4_1_U8 grp_fu_585_p2 mac_muladd_8ns_8s_16s_16_4_1_U10 xor_ln91_fu_503_p2 mac_muladd_8ns_7ns_8ns_15_4_1_U9 mac_muladd_8ns_8s_16s_16_4_1_U11 mac_muladd_8ns_7ns_8ns_15_4_1_U9 grp_fu_595_p2 mac_muladd_8ns_8s_16s_16_4_1_U11 xor_ln92_fu_534_p2 add_ln84_fu_316_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>mul_16ns_16ns_32_1_1_U24</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>entry_proc_U0</InstName>
+                    <ModuleName>entry_proc</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>201</ID>
+                </Instance>
+                <Instance>
+                    <InstName>yuv_scale_U0</InstName>
+                    <ModuleName>yuv_scale</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>214</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_100</InstName>
+                            <ModuleName>yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>100</ID>
+                            <BindInstances>icmp_ln164_fu_153_p2 add_ln164_fu_159_p2 mul_8ns_8ns_15_1_1_U36 mul_8ns_8ns_15_1_1_U37 mul_8ns_8ns_15_1_1_U38</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>mul_16ns_16ns_32_1_1_U50</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>yuv2rgb_U0</InstName>
+                    <ModuleName>yuv2rgb</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>231</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_yuv2rgb_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y_fu_74</InstName>
+                            <ModuleName>yuv2rgb_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>74</ID>
+                            <BindInstances>icmp_ln122_fu_223_p2 add_ln122_1_fu_229_p2 add_ln122_fu_327_p2 icmp_ln126_fu_333_p2 select_ln124_fu_338_p3 select_ln122_fu_346_p3 C_fu_244_p2 xor_ln133_fu_258_p2 xor_ln134_fu_296_p2 mac_muladd_9s_9ns_8ns_18_4_1_U65 mac_muladd_9s_9ns_8ns_18_4_1_U65 mac_muladd_9ns_8s_18s_18_4_1_U67 mac_muladd_9ns_8s_18s_18_4_1_U67 icmp_ln135_fu_492_p2 select_ln135_fu_514_p3 or_ln135_fu_522_p2 R_fu_528_p3 mac_muladd_8s_8s_17s_17_4_1_U66 mac_muladd_8s_8s_17s_17_4_1_U66 mul_8s_9s_17_1_1_U64 mac_muladd_8s_8s_17s_17_4_1_U66 add_ln136_1_fu_402_p2 icmp_ln136_fu_417_p2 select_ln136_fu_441_p3 or_ln136_fu_449_p2 G_fu_455_p3 icmp_ln137_fu_583_p2 select_ln137_fu_607_p3 or_ln137_fu_615_p2 B_fu_621_p3 add_ln126_fu_464_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>mul_16ns_16ns_32_1_1_U80</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>Y_scale_c_U U_scale_c_U V_scale_c_U p_yuv_channels_ch1_U p_yuv_channels_ch2_U p_yuv_channels_ch3_U p_yuv_width_U p_yuv_height_U p_scale_channels_ch1_U p_scale_channels_ch2_U p_scale_channels_ch3_U p_scale_width_U p_scale_height_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>entry_proc</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.187</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>-</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>3</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>47</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>rgb2yuv_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y</Name>
+            <Loops>
+                <RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.791</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40007</Best-caseLatency>
+                    <Average-caseLatency>784407</Average-caseLatency>
+                    <Worst-caseLatency>2457607</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>40001 ~ 2457601</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y>
+                        <Name>RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>40000</min>
+                                <max>2457600</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>40005 ~ 2457605</Latency>
+                        <AbsoluteTimeLatency>0.400 ms ~ 24.576 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>7</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:65~../yuv_filter.c:51</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y>
+                            <Name>RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../yuv_filter.c:80~../yuv_filter.c:51</SourceLocation>
+                        </RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>227</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>519</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln80_fu_220_p2" SOURCE="../yuv_filter.c:80" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln80" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln80_1_fu_226_p2" SOURCE="../yuv_filter.c:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln80_fu_243_p2" SOURCE="../yuv_filter.c:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln84_fu_249_p2" SOURCE="../yuv_filter.c:84" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln84" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln82_fu_254_p3" SOURCE="../yuv_filter.c:82" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln82" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln80_fu_262_p3" SOURCE="../yuv_filter.c:80" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln80" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_5ns_15s_15_4_1_U7" SOURCE="../yuv_filter.c:90" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln90" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op zext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="zext" PRAGMA="" RTLNAME="mac_muladd_8ns_5ns_15s_15_4_1_U7" SOURCE="../yuv_filter.c:90" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln90_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_5ns_15s_15_4_1_U7" SOURCE="../yuv_filter.c:90" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln90_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="p_yuv_channels_ch1_din" SOURCE="../yuv_filter.c:90" STORAGESUBTYPE="" URAM="0" VARIABLE="Y" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln91_fu_431_p2" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_7s_8ns_15_4_1_U8" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8s_16s_16_4_1_U10" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln91_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_7s_8ns_15_4_1_U8" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_585_p2" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln91_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8s_16s_16_4_1_U10" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln91_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln91_fu_503_p2" SOURCE="../yuv_filter.c:91" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln91" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_7ns_8ns_15_4_1_U9" SOURCE="../yuv_filter.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8ns_8s_16s_16_4_1_U11" SOURCE="../yuv_filter.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln92_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_7ns_8ns_15_4_1_U9" SOURCE="../yuv_filter.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_595_p2" SOURCE="../yuv_filter.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln92_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8ns_8s_16s_16_4_1_U11" SOURCE="../yuv_filter.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln92_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln92_fu_534_p2" SOURCE="../yuv_filter.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln92" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln84_fu_316_p2" SOURCE="../yuv_filter.c:84" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln84" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>rgb2yuv</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.791</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40009</Best-caseLatency>
+                    <Average-caseLatency>784409</Average-caseLatency>
+                    <Worst-caseLatency>2457609</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>40009 ~ 2457609</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:77~../yuv_filter.c:51</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>6</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>6</UTIL_DSP>
+                    <FF>280</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>571</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16ns_16ns_32_1_1_U24" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y</Name>
+            <Loops>
+                <YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.938</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40003</Best-caseLatency>
+                    <Average-caseLatency>784403</Average-caseLatency>
+                    <Worst-caseLatency>2457603</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>40001 ~ 2457601</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y>
+                        <Name>YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>40000</min>
+                                <max>2457600</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>40001 ~ 2457601</Latency>
+                        <AbsoluteTimeLatency>0.400 ms ~ 24.576 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:164~../yuv_filter.c:52</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y>
+                            <Name>YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../yuv_filter.c:164~../yuv_filter.c:52</SourceLocation>
+                        </YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>88</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>301</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln164_fu_153_p2" SOURCE="../yuv_filter.c:164" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln164" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln164_fu_159_p2" SOURCE="../yuv_filter.c:164" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln164" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_15_1_1_U36" SOURCE="../yuv_filter.c:174" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln174" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_15_1_1_U37" SOURCE="../yuv_filter.c:175" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln175" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_8ns_15_1_1_U38" SOURCE="../yuv_filter.c:176" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln176" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yuv_scale</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.938</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40006</Best-caseLatency>
+                    <Average-caseLatency>784406</Average-caseLatency>
+                    <Worst-caseLatency>2457606</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>40006 ~ 2457606</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:161~../yuv_filter.c:52</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>183</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>411</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16ns_16ns_32_1_1_U50" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yuv2rgb_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y</Name>
+            <Loops>
+                <YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.407</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40006</Best-caseLatency>
+                    <Average-caseLatency>784406</Average-caseLatency>
+                    <Worst-caseLatency>2457606</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>40001 ~ 2457601</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y>
+                        <Name>YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>40000</min>
+                                <max>2457600</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>40004 ~ 2457604</Latency>
+                        <AbsoluteTimeLatency>0.400 ms ~ 24.576 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:105~../yuv_filter.c:53</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y>
+                            <Name>YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../yuv_filter.c:122~../yuv_filter.c:53</SourceLocation>
+                        </YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>3</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>3</UTIL_DSP>
+                    <FF>268</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>574</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln122_fu_223_p2" SOURCE="../yuv_filter.c:122" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln122" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln122_1_fu_229_p2" SOURCE="../yuv_filter.c:122" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln122_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln122_fu_327_p2" SOURCE="../yuv_filter.c:122" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln122" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln126_fu_333_p2" SOURCE="../yuv_filter.c:126" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln126" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln124_fu_338_p3" SOURCE="../yuv_filter.c:124" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln124" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln122_fu_346_p3" SOURCE="../yuv_filter.c:122" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln122" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="C_fu_244_p2" SOURCE="../yuv_filter.c:132" STORAGESUBTYPE="" URAM="0" VARIABLE="C" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln133_fu_258_p2" SOURCE="../yuv_filter.c:133" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln133" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln134_fu_296_p2" SOURCE="../yuv_filter.c:134" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln134" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9s_9ns_8ns_18_4_1_U65" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln135" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9s_9ns_8ns_18_4_1_U65" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln135" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_8s_18s_18_4_1_U67" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln135_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_8s_18s_18_4_1_U67" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln135_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln135_fu_492_p2" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln135" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln135_fu_514_p3" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln135" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="or" PRAGMA="" RTLNAME="or_ln135_fu_522_p2" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln135" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="R_fu_528_p3" SOURCE="../yuv_filter.c:135" STORAGESUBTYPE="" URAM="0" VARIABLE="R" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U66" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln136" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="sext" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U66" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="sext_ln136_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_9s_17_1_1_U64" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln136_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U66" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln136" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln136_1_fu_402_p2" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln136_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln136_fu_417_p2" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln136" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln136_fu_441_p3" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln136" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="or" PRAGMA="" RTLNAME="or_ln136_fu_449_p2" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln136" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="G_fu_455_p3" SOURCE="../yuv_filter.c:136" STORAGESUBTYPE="" URAM="0" VARIABLE="G" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln137_fu_583_p2" SOURCE="../yuv_filter.c:137" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln137" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="select_ln137_fu_607_p3" SOURCE="../yuv_filter.c:137" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln137" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="or" PRAGMA="" RTLNAME="or_ln137_fu_615_p2" SOURCE="../yuv_filter.c:137" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln137" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="select" PRAGMA="" RTLNAME="B_fu_621_p3" SOURCE="../yuv_filter.c:137" STORAGESUBTYPE="" URAM="0" VARIABLE="B" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y" OPTYPE="add" PRAGMA="" RTLNAME="add_ln126_fu_464_p2" SOURCE="../yuv_filter.c:126" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln126" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yuv2rgb</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.407</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40009</Best-caseLatency>
+                    <Average-caseLatency>784409</Average-caseLatency>
+                    <Worst-caseLatency>2457609</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>40009 ~ 2457609</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:118~../yuv_filter.c:53</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>4</UTIL_DSP>
+                    <FF>370</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>648</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16ns_16ns_32_1_1_U80" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yuv_filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.938</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>40016</Best-caseLatency>
+                    <Average-caseLatency>784416</Average-caseLatency>
+                    <Worst-caseLatency>2457616</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.400 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.844 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>24.576 ms</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>
+                        <range>
+                            <min>40010</min>
+                            <max>2457610</max>
+                        </range>
+                    </DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>40010 ~ 2457610</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../yuv_filter.c:55</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>12288</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>12288</UTIL_BRAM>
+                    <DSP>11</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>12</UTIL_DSP>
+                    <FF>2509</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>6</UTIL_FF>
+                    <LUT>2675</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>12</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="Y_scale_c_U" SOURCE="../yuv_filter.c:55" STORAGESIZE="8 3 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="Y_scale_c" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="U_scale_c_U" SOURCE="../yuv_filter.c:55" STORAGESIZE="8 3 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="U_scale_c" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="V_scale_c_U" SOURCE="../yuv_filter.c:55" STORAGESIZE="8 3 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="V_scale_c" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2048" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_yuv_channels_ch1_U" SOURCE="../yuv_filter.c:45" STORAGESIZE="8 2457600 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_yuv_channels_ch1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2048" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_yuv_channels_ch2_U" SOURCE="../yuv_filter.c:45" STORAGESIZE="8 2457600 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_yuv_channels_ch2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2048" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_yuv_channels_ch3_U" SOURCE="../yuv_filter.c:45" STORAGESIZE="8 2457600 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_yuv_channels_ch3" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_yuv_width_U" SOURCE="../yuv_filter.c:45" STORAGESIZE="16 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_yuv_width" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_yuv_height_U" SOURCE="../yuv_filter.c:45" STORAGESIZE="16 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_yuv_height" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2048" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_scale_channels_ch1_U" SOURCE="../yuv_filter.c:46" STORAGESIZE="8 2457600 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_scale_channels_ch1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2048" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_scale_channels_ch2_U" SOURCE="../yuv_filter.c:46" STORAGESIZE="8 2457600 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_scale_channels_ch2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="2048" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_scale_channels_ch3_U" SOURCE="../yuv_filter.c:46" STORAGESIZE="8 2457600 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_scale_channels_ch3" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_scale_width_U" SOURCE="../yuv_filter.c:46" STORAGESIZE="16 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_scale_width" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="p_scale_height_U" SOURCE="../yuv_filter.c:46" STORAGESIZE="16 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="p_scale_height" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation>
+        <FIFOInst>
+            <Name>p_yuv_channels_ch1_U</Name>
+            <ParentInst/>
+            <StaticDepth>2457600</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_yuv_channels_ch2_U</Name>
+            <ParentInst/>
+            <StaticDepth>2457600</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_yuv_channels_ch3_U</Name>
+            <ParentInst/>
+            <StaticDepth>2457600</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_yuv_width_U</Name>
+            <ParentInst/>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_yuv_height_U</Name>
+            <ParentInst/>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_scale_channels_ch1_U</Name>
+            <ParentInst/>
+            <StaticDepth>2457600</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_scale_channels_ch2_U</Name>
+            <ParentInst/>
+            <StaticDepth>2457600</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_scale_channels_ch3_U</Name>
+            <ParentInst/>
+            <StaticDepth>2457600</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_scale_width_U</Name>
+            <ParentInst/>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>p_scale_height_U</Name>
+            <ParentInst/>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+    </FIFOInformation>
+    <UserConfigCommands>
+        <config_dataflow default_channel="fifo"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="in" index="0" direction="in" srcType="*" srcSize="58982432">
+            <hwRefs>
+                <hwRef type="port" interface="in_channels_ch1_address0" name="in_channels_ch1_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_ce0" name="in_channels_ch1_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_d0" name="in_channels_ch1_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_q0" name="in_channels_ch1_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_channels_ch1_we0" name="in_channels_ch1_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_address1" name="in_channels_ch1_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_ce1" name="in_channels_ch1_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_d1" name="in_channels_ch1_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch1_q1" name="in_channels_ch1_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_channels_ch1_we1" name="in_channels_ch1_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_address0" name="in_channels_ch2_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_ce0" name="in_channels_ch2_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_d0" name="in_channels_ch2_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_q0" name="in_channels_ch2_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_channels_ch2_we0" name="in_channels_ch2_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_address1" name="in_channels_ch2_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_ce1" name="in_channels_ch2_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_d1" name="in_channels_ch2_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch2_q1" name="in_channels_ch2_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_channels_ch2_we1" name="in_channels_ch2_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_address0" name="in_channels_ch3_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_ce0" name="in_channels_ch3_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_d0" name="in_channels_ch3_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_q0" name="in_channels_ch3_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_channels_ch3_we0" name="in_channels_ch3_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_address1" name="in_channels_ch3_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_ce1" name="in_channels_ch3_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_d1" name="in_channels_ch3_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="in_channels_ch3_q1" name="in_channels_ch3_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_channels_ch3_we1" name="in_channels_ch3_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_width" name="in_width" usage="data" direction="in"/>
+                <hwRef type="port" interface="in_height" name="in_height" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out" index="1" direction="out" srcType="*" srcSize="58982432">
+            <hwRefs>
+                <hwRef type="port" interface="out_channels_ch1_address0" name="out_channels_ch1_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_ce0" name="out_channels_ch1_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_d0" name="out_channels_ch1_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_q0" name="out_channels_ch1_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="out_channels_ch1_we0" name="out_channels_ch1_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_address1" name="out_channels_ch1_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_ce1" name="out_channels_ch1_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_d1" name="out_channels_ch1_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch1_q1" name="out_channels_ch1_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="out_channels_ch1_we1" name="out_channels_ch1_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_address0" name="out_channels_ch2_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_ce0" name="out_channels_ch2_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_d0" name="out_channels_ch2_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_q0" name="out_channels_ch2_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="out_channels_ch2_we0" name="out_channels_ch2_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_address1" name="out_channels_ch2_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_ce1" name="out_channels_ch2_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_d1" name="out_channels_ch2_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch2_q1" name="out_channels_ch2_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="out_channels_ch2_we1" name="out_channels_ch2_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_address0" name="out_channels_ch3_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_ce0" name="out_channels_ch3_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_d0" name="out_channels_ch3_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_q0" name="out_channels_ch3_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="out_channels_ch3_we0" name="out_channels_ch3_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_address1" name="out_channels_ch3_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_ce1" name="out_channels_ch3_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_d1" name="out_channels_ch3_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_channels_ch3_q1" name="out_channels_ch3_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="out_channels_ch3_we1" name="out_channels_ch3_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_width" name="out_width" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_width_ap_vld" name="out_width_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="out_height" name="out_height" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_height_ap_vld" name="out_height_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="Y_scale" index="2" direction="in" srcType="unsigned char" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="Y_scale" name="Y_scale" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="U_scale" index="3" direction="in" srcType="unsigned char" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="U_scale" name="U_scale" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="V_scale" index="4" direction="in" srcType="unsigned char" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="V_scale" name="V_scale" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="in_channels_ch1_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="in_channels_ch1_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch1_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch1_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch1_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch1_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch1_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch1_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch1_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch1_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="in_channels_ch1_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch1_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch1_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch1_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch1_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch1_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch1_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch1_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch2_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="in_channels_ch2_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch2_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch2_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch2_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch2_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch2_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch2_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch2_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch2_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="in_channels_ch2_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch2_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch2_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch2_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch2_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch2_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch2_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch2_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch3_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="in_channels_ch3_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch3_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch3_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch3_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch3_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch3_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch3_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch3_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch3_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="in_channels_ch3_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch3_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch3_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch3_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch3_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_channels_ch3_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="in_channels_ch3_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_channels_ch3_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_width" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="in_width">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_width</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_height" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="in_height">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_height</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch1_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="out_channels_ch1_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch1_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch1_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch1_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch1_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch1_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch1_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch1_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch1_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="out_channels_ch1_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch1_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch1_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch1_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch1_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch1_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch1_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch1_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch2_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="out_channels_ch2_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch2_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch2_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch2_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch2_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch2_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch2_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch2_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch2_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="out_channels_ch2_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch2_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch2_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch2_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch2_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch2_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch2_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch2_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch3_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="out_channels_ch3_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch3_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch3_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch3_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch3_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch3_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch3_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch3_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch3_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="22">
+            <portMaps>
+                <portMap portMapName="out_channels_ch3_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch3_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch3_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch3_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch3_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_channels_ch3_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="out_channels_ch3_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_channels_ch3_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_width" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="out_width">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_width</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_height" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="out_height">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_height</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="Y_scale" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="Y_scale">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>Y_scale</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="Y_scale"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="U_scale" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="U_scale">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>U_scale</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="U_scale"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="V_scale" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="V_scale">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>V_scale</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="V_scale"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="in_channels_ch1_address0">out, 22</column>
+                    <column name="in_channels_ch1_address1">out, 22</column>
+                    <column name="in_channels_ch1_d0">out, 8</column>
+                    <column name="in_channels_ch1_d1">out, 8</column>
+                    <column name="in_channels_ch1_q0">in, 8</column>
+                    <column name="in_channels_ch1_q1">in, 8</column>
+                    <column name="in_channels_ch2_address0">out, 22</column>
+                    <column name="in_channels_ch2_address1">out, 22</column>
+                    <column name="in_channels_ch2_d0">out, 8</column>
+                    <column name="in_channels_ch2_d1">out, 8</column>
+                    <column name="in_channels_ch2_q0">in, 8</column>
+                    <column name="in_channels_ch2_q1">in, 8</column>
+                    <column name="in_channels_ch3_address0">out, 22</column>
+                    <column name="in_channels_ch3_address1">out, 22</column>
+                    <column name="in_channels_ch3_d0">out, 8</column>
+                    <column name="in_channels_ch3_d1">out, 8</column>
+                    <column name="in_channels_ch3_q0">in, 8</column>
+                    <column name="in_channels_ch3_q1">in, 8</column>
+                    <column name="out_channels_ch1_address0">out, 22</column>
+                    <column name="out_channels_ch1_address1">out, 22</column>
+                    <column name="out_channels_ch1_d0">out, 8</column>
+                    <column name="out_channels_ch1_d1">out, 8</column>
+                    <column name="out_channels_ch1_q0">in, 8</column>
+                    <column name="out_channels_ch1_q1">in, 8</column>
+                    <column name="out_channels_ch2_address0">out, 22</column>
+                    <column name="out_channels_ch2_address1">out, 22</column>
+                    <column name="out_channels_ch2_d0">out, 8</column>
+                    <column name="out_channels_ch2_d1">out, 8</column>
+                    <column name="out_channels_ch2_q0">in, 8</column>
+                    <column name="out_channels_ch2_q1">in, 8</column>
+                    <column name="out_channels_ch3_address0">out, 22</column>
+                    <column name="out_channels_ch3_address1">out, 22</column>
+                    <column name="out_channels_ch3_d0">out, 8</column>
+                    <column name="out_channels_ch3_d1">out, 8</column>
+                    <column name="out_channels_ch3_q0">in, 8</column>
+                    <column name="out_channels_ch3_q1">in, 8</column>
+                </table>
+            </item>
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="U_scale">ap_none, in, 8</column>
+                    <column name="V_scale">ap_none, in, 8</column>
+                    <column name="Y_scale">ap_none, in, 8</column>
+                    <column name="in_height">ap_none, in, 16</column>
+                    <column name="in_width">ap_none, in, 16</column>
+                    <column name="out_height">ap_vld, out, 16</column>
+                    <column name="out_width">ap_vld, out, 16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="in">in, pointer</column>
+                    <column name="out">out, pointer</column>
+                    <column name="Y_scale">in, unsigned char</column>
+                    <column name="U_scale">in, unsigned char</column>
+                    <column name="V_scale">in, unsigned char</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="in">in_channels_ch1_address0, port, offset</column>
+                    <column name="in">in_channels_ch1_ce0, port, </column>
+                    <column name="in">in_channels_ch1_d0, port, </column>
+                    <column name="in">in_channels_ch1_q0, port, </column>
+                    <column name="in">in_channels_ch1_we0, port, </column>
+                    <column name="in">in_channels_ch1_address1, port, offset</column>
+                    <column name="in">in_channels_ch1_ce1, port, </column>
+                    <column name="in">in_channels_ch1_d1, port, </column>
+                    <column name="in">in_channels_ch1_q1, port, </column>
+                    <column name="in">in_channels_ch1_we1, port, </column>
+                    <column name="in">in_channels_ch2_address0, port, offset</column>
+                    <column name="in">in_channels_ch2_ce0, port, </column>
+                    <column name="in">in_channels_ch2_d0, port, </column>
+                    <column name="in">in_channels_ch2_q0, port, </column>
+                    <column name="in">in_channels_ch2_we0, port, </column>
+                    <column name="in">in_channels_ch2_address1, port, offset</column>
+                    <column name="in">in_channels_ch2_ce1, port, </column>
+                    <column name="in">in_channels_ch2_d1, port, </column>
+                    <column name="in">in_channels_ch2_q1, port, </column>
+                    <column name="in">in_channels_ch2_we1, port, </column>
+                    <column name="in">in_channels_ch3_address0, port, offset</column>
+                    <column name="in">in_channels_ch3_ce0, port, </column>
+                    <column name="in">in_channels_ch3_d0, port, </column>
+                    <column name="in">in_channels_ch3_q0, port, </column>
+                    <column name="in">in_channels_ch3_we0, port, </column>
+                    <column name="in">in_channels_ch3_address1, port, offset</column>
+                    <column name="in">in_channels_ch3_ce1, port, </column>
+                    <column name="in">in_channels_ch3_d1, port, </column>
+                    <column name="in">in_channels_ch3_q1, port, </column>
+                    <column name="in">in_channels_ch3_we1, port, </column>
+                    <column name="in">in_width, port, </column>
+                    <column name="in">in_height, port, </column>
+                    <column name="out">out_channels_ch1_address0, port, offset</column>
+                    <column name="out">out_channels_ch1_ce0, port, </column>
+                    <column name="out">out_channels_ch1_d0, port, </column>
+                    <column name="out">out_channels_ch1_q0, port, </column>
+                    <column name="out">out_channels_ch1_we0, port, </column>
+                    <column name="out">out_channels_ch1_address1, port, offset</column>
+                    <column name="out">out_channels_ch1_ce1, port, </column>
+                    <column name="out">out_channels_ch1_d1, port, </column>
+                    <column name="out">out_channels_ch1_q1, port, </column>
+                    <column name="out">out_channels_ch1_we1, port, </column>
+                    <column name="out">out_channels_ch2_address0, port, offset</column>
+                    <column name="out">out_channels_ch2_ce0, port, </column>
+                    <column name="out">out_channels_ch2_d0, port, </column>
+                    <column name="out">out_channels_ch2_q0, port, </column>
+                    <column name="out">out_channels_ch2_we0, port, </column>
+                    <column name="out">out_channels_ch2_address1, port, offset</column>
+                    <column name="out">out_channels_ch2_ce1, port, </column>
+                    <column name="out">out_channels_ch2_d1, port, </column>
+                    <column name="out">out_channels_ch2_q1, port, </column>
+                    <column name="out">out_channels_ch2_we1, port, </column>
+                    <column name="out">out_channels_ch3_address0, port, offset</column>
+                    <column name="out">out_channels_ch3_ce0, port, </column>
+                    <column name="out">out_channels_ch3_d0, port, </column>
+                    <column name="out">out_channels_ch3_q0, port, </column>
+                    <column name="out">out_channels_ch3_we0, port, </column>
+                    <column name="out">out_channels_ch3_address1, port, offset</column>
+                    <column name="out">out_channels_ch3_ce1, port, </column>
+                    <column name="out">out_channels_ch3_d1, port, </column>
+                    <column name="out">out_channels_ch3_q1, port, </column>
+                    <column name="out">out_channels_ch3_we1, port, </column>
+                    <column name="out">out_width, port, </column>
+                    <column name="out">out_width_ap_vld, port, </column>
+                    <column name="out">out_height, port, </column>
+                    <column name="out">out_height_ap_vld, port, </column>
+                    <column name="Y_scale">Y_scale, port, </column>
+                    <column name="U_scale">U_scale, port, </column>
+                    <column name="V_scale">V_scale, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="dataflow" location="../yuv_filter.c:55" status="valid" parentFunction="yuv_filter" variable="" isDirective="0" options=""/>
+        <Pragma type="loop_tripcount" location="../yuv_filter.c:81" status="valid" parentFunction="rgb2yuv" variable="" isDirective="0" options="min=200 max=1920"/>
+        <Pragma type="pipeline" location="../yuv_filter.c:82" status="valid" parentFunction="rgb2yuv" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../yuv_filter.c:85" status="valid" parentFunction="rgb2yuv" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_tripcount" location="../yuv_filter.c:86" status="valid" parentFunction="rgb2yuv" variable="" isDirective="0" options="min=200 max=1280"/>
+        <Pragma type="loop_tripcount" location="../yuv_filter.c:123" status="valid" parentFunction="yuv2rgb" variable="" isDirective="0" options="min=200 max=1920"/>
+        <Pragma type="pipeline" location="../yuv_filter.c:124" status="valid" parentFunction="yuv2rgb" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../yuv_filter.c:127" status="valid" parentFunction="yuv2rgb" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_tripcount" location="../yuv_filter.c:128" status="valid" parentFunction="yuv2rgb" variable="" isDirective="0" options="min=200 max=1280"/>
+        <Pragma type="loop_tripcount" location="../yuv_filter.c:165" status="valid" parentFunction="yuv_scale" variable="" isDirective="0" options="min=200 max=1920"/>
+        <Pragma type="pipeline" location="../yuv_filter.c:166" status="valid" parentFunction="yuv_scale" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../yuv_filter.c:169" status="valid" parentFunction="yuv_scale" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_tripcount" location="../yuv_filter.c:170" status="valid" parentFunction="yuv_scale" variable="" isDirective="0" options="min=200 max=1280"/>
+        <Pragma type="loop_flatten" location="../yuv_filter.c:80" status="valid" parentFunction="rgb2yuv" variable="" isDirective="0" options=" "/>
+        <Pragma type="loop_flatten" location="../yuv_filter.c:80" status="valid" parentFunction="yuv2rgb" variable="" isDirective="0" options=" "/>
+        <Pragma type="loop_flatten" location="../yuv_filter.c:80" status="valid" parentFunction="yuv_scale" variable="" isDirective="0" options=" "/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="loop_flatten" parentFunction="rgb2yuv" options=" " pragmaLocId="../yuv_filter.c:80:0" pragmaLocOpt="rgb2yuv/RGB2YUV_LOOP_X" srcPragmaType="pipeline" srcPragmaLoc="../yuv_filter.c:82" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../yuv_filter.c:82" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=rgb2yuv/RGB2YUV_LOOP_X  " loopName="RGB2YUV_LOOP_X" loopLoc="../yuv_filter.c:80:4"/>
+        <AutoPragma type="loop_flatten" parentFunction="yuv2rgb" options=" " pragmaLocId="../yuv_filter.c:122:0" pragmaLocOpt="yuv2rgb/YUV2RGB_LOOP_X" srcPragmaType="pipeline" srcPragmaLoc="../yuv_filter.c:124" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../yuv_filter.c:124" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=yuv2rgb/YUV2RGB_LOOP_X  " loopName="YUV2RGB_LOOP_X" loopLoc="../yuv_filter.c:122:4"/>
+        <AutoPragma type="loop_flatten" parentFunction="yuv_scale" options=" " pragmaLocId="../yuv_filter.c:164:0" pragmaLocOpt="yuv_scale/YUV_SCALE_LOOP_X" srcPragmaType="pipeline" srcPragmaLoc="../yuv_filter.c:166" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../yuv_filter.c:166" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=yuv_scale/YUV_SCALE_LOOP_X  " loopName="YUV_SCALE_LOOP_X" loopLoc="../yuv_filter.c:164:4"/>
+    </AutoPragmaReport>
+</profile>

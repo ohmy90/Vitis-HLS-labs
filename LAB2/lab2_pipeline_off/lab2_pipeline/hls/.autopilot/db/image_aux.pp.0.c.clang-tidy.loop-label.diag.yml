@@ -1,0 +1,52 @@
+---
+MainSourceFile:  'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_pipeline_off/lab2_pipeline_off/hls/.autopilot/db/image_aux.pp.0.c'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_41_1:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\image_aux.c'
+      FileOffset:      41
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off\lab2_pipeline_off\hls\.autopilot\db\image_aux.pp.0.c'
+          Offset:          45503
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_41_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_42_2:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\image_aux.c'
+      FileOffset:      42
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off\lab2_pipeline_off\hls\.autopilot\db\image_aux.pp.0.c'
+          Offset:          45533
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_42_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_72_1:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\image_aux.c'
+      FileOffset:      72
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off\lab2_pipeline_off\hls\.autopilot\db\image_aux.pp.0.c'
+          Offset:          46128
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_72_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_74_2:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\image_aux.c'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off\lab2_pipeline_off\hls\.autopilot\db\image_aux.pp.0.c'
+          Offset:          46160
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_74_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_pipeline_off'
+...

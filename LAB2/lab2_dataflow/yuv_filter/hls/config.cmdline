@@ -1,0 +1,3 @@
+relativeroot=C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab2/lab2_dataflow
+original_argv=-c --mode hls --config C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab2\lab2_dataflow\hls_config.cfg --work_dir yuv_filter 
+
