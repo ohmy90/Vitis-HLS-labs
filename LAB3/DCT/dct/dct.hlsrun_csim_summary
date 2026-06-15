@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT\\dct\\dct.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/14/26 21:21:03",
+ "timestampMillis": "1781486463196",
+ "buildStep": {
+  "cmdId": "1480b1ce-46e5-4687-b86b-810e5dac2a03",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT\\dct\\logs\\dct.steps.log",
+  "commandLine": "D:/movies/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT\\hls_config.cfg --work_dir dct ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT\\hls_config.cfg",
+   "--work_dir",
+   "dct"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 21:21:03",
+ "timestampMillis": "1781486463196",
+ "status": {
+  "cmdId": "1480b1ce-46e5-4687-b86b-810e5dac2a03",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/14/26 21:21:07",
+ "timestampMillis": "1781486467903",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct.c",
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/14/26 21:21:07",
+ "timestampMillis": "1781486467904",
+ "buildStep": {
+  "cmdId": "c3626f67-bd05-4580-952a-775c2ae319de",
+  "name": "",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT\\dct\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\DCT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 21:21:07",
+ "timestampMillis": "1781486467905",
+ "status": {
+  "cmdId": "c3626f67-bd05-4580-952a-775c2ae319de",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 21:21:08",
+ "timestampMillis": "1781486468375",
+ "status": {
+  "cmdId": "c3626f67-bd05-4580-952a-775c2ae319de",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 21:21:08",
+ "timestampMillis": "1781486468487",
+ "status": {
+  "cmdId": "1480b1ce-46e5-4687-b86b-810e5dac2a03",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 21:21:08",
+ "timestampMillis": "1781486468487",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 21:21:08",
+ "timestampMillis": "1781486468488",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_pipeline",
+    "arguments": [
+      "D:\\movies\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\movies\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\movies\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=dct",
+      "-c",
+      "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct.c"
+    ],
+    "file": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct.c"
+  },
+  {
+    "directory": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_pipeline",
+    "arguments": [
+      "D:\\movies\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\movies\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\movies\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_test.c"
+    ],
+    "file": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_test.c"
+  }
+]

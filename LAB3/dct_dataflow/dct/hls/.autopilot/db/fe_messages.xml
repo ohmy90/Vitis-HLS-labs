@@ -1,0 +1,107 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-7036" msg_severity="WARNING" msg_loc="../dct.c:57:53" msg_body="unexpected pragma argument '2', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-7036" msg_severity="WARNING" msg_loc="../dct.c:135:53" msg_body="unexpected pragma argument '2', expects identifier">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:40:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:57:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="0" ARG_PragmaOptions="variable=col_inbuf type=2 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:71:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:87:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:102:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:118:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:129:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:135:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct" ARG_PragmaIsValid="0" ARG_PragmaOptions="variable=buf_2d_in type=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:122:7" msg_body="Loop 'WR_Loop_Col' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="WR_Loop_Col"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:91:7" msg_body="Loop 'Xpose_Col_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Xpose_Col_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:75:7" msg_body="Loop 'Xpose_Row_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Xpose_Row_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:44:7" msg_body="Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:106:7" msg_body="Loop 'RD_Loop_Col' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="RD_Loop_Col"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:112:0" msg_body="Unrolling loop 'WR_Loop_Col' (../dct.c:122:7) in function 'write_data' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:122:7" LoopName="WR_Loop_Col"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:54:0" msg_body="Unrolling loop 'Xpose_Col_Inner_Loop' (../dct.c:91:7) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:91:7" LoopName="Xpose_Col_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:54:0" msg_body="Unrolling loop 'Xpose_Row_Inner_Loop' (../dct.c:75:7) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:75:7" LoopName="Xpose_Row_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:31:0" msg_body="Unrolling loop 'DCT_Inner_Loop' (../dct.c:44:7) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:44:7" LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:96:0" msg_body="Unrolling loop 'RD_Loop_Col' (../dct.c:106:7) in function 'read_data' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:106:7" LoopName="RD_Loop_Col"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../dct.c:34:0" msg_body="Partitioning array 'dct_1d.dct_coeff_table' dimension 2 due to constant index.">
+        <args Dim="2" Value="dct_1d.dct_coeff_table"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../dct.c:132:10" msg_body="Partitioning array 'buf_2d_in' dimension 2 due to constant index.">
+        <args Dim="2" Value="buf_2d_in"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../dct.c:133:10" msg_body="Partitioning array 'buf_2d_out' dimension 2 due to constant index.">
+        <args Dim="2" Value="buf_2d_out"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../dct.c:56:33" msg_body="Partitioning array 'col_inbuf' dimension 2 due to constant index.">
+        <args Dim="2" Value="col_inbuf"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../dct.c:55:15" msg_body="array_partition dim=1 type=complete  variable=row_outbuf 1 dct_2d ../dct.c:55:15 ../dct.c:71:1row_outbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=row_outbuf" PragmaSrcLoc="../dct.c:71:1" PragmaSrcLoc-DebugLoc="File ../dct.c Line 71 Column 1" PragmaType="array_partition" VarLoc="../dct.c:55:15" VarName="row_outbuf"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../dct.c:71:1" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'row_outbuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="row_outbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../dct.c:56:15" msg_body="array_partition dim=1 type=complete  variable=col_outbuf 1 dct_2d ../dct.c:56:15 ../dct.c:87:1col_outbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=col_outbuf" PragmaSrcLoc="../dct.c:87:1" PragmaSrcLoc-DebugLoc="File ../dct.c Line 87 Column 1" PragmaType="array_partition" VarLoc="../dct.c:56:15" VarName="col_outbuf"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../dct.c:87:1" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'col_outbuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="col_outbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:34:0" msg_body="Applying array_partition to 'dct_1d.dct_coeff_table': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="dct_1d.dct_coeff_table"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:55:15" msg_body="Applying array_partition to 'row_outbuf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="row_outbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:56:15" msg_body="Applying array_partition to 'col_outbuf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="col_outbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:56:33" msg_body="Applying array_partition to 'col_inbuf': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="col_inbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:132:10" msg_body="Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="buf_2d_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:133:10" msg_body="Applying array_partition to 'buf_2d_out': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="buf_2d_out"/>
+    </msg>
+</xilinx:hls_fe_msgs>

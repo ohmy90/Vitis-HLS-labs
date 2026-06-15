@@ -1,0 +1,9 @@
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\..\dct.c:57:56: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+   #pragma HLS array_partition variable=col_inbuf type=2 dim=2 
+                                                       ^
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\..\dct.c:69:1: warning: multiple compatible 'PIPELINE' pragmas (C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\..\dct.c:69:1, C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\..\dct.c:84:1) in the same function scope (dct_2d). Combining them into pragma 'PIPELINE II=1' [-Wignored-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\..\dct.c:129:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=buf_2d_in type=2 
+                                                    ^

@@ -1,0 +1,4 @@
+../dct.c:67:1: warning: multiple compatible 'PIPELINE' pragmas (../dct.c:67:1, ../dct.c:82:1) in the same function scope (dct_2d). Combining them into pragma 'PIPELINE II=1' [-Wignored-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+1 warning generated.

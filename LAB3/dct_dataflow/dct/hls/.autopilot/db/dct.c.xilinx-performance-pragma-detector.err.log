@@ -1,0 +1,6 @@
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_dataflow\..\dct.c:57:56: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+   #pragma HLS array_partition variable=col_inbuf type=2 dim=2 
+                                                       ^
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_dataflow\..\dct.c:135:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=buf_2d_in type=2 
+                                                    ^

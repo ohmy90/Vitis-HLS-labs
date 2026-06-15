@@ -1,0 +1,7 @@
+../dct.c:57:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=col_inbuf type=2 dim=2
+                                                    ^
+../dct.c:135:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=buf_2d_in type=2
+                                                    ^
+2 warnings generated.

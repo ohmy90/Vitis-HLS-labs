@@ -1,0 +1,52 @@
+---
+MainSourceFile:  'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_pipeline_outer_loop/dct/hls/.autopilot/db/dct.pp.0.c'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_69_1:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct.c'
+      FileOffset:      69
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\dct\hls\.autopilot\db\dct.pp.0.c'
+          Offset:          7602
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_69_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_84_2:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct.c'
+      FileOffset:      84
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\dct\hls\.autopilot\db\dct.pp.0.c'
+          Offset:          7869
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_84_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_98_1:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct.c'
+      FileOffset:      98
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\dct\hls\.autopilot\db\dct.pp.0.c'
+          Offset:          8106
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_98_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_113_1:  '
+      FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct.c'
+      FileOffset:      113
+      Replacements:
+        - FilePath:        'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\dct\hls\.autopilot\db\dct.pp.0.c'
+          Offset:          8338
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_113_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop'
+...

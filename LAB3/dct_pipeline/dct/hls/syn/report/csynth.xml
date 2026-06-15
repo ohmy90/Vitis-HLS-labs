@@ -1,0 +1,1124 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a35t-fgg484-2</Part>
+        <TopModelName>dct</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.436</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>241</Best-caseLatency>
+            <Average-caseLatency>241</Average-caseLatency>
+            <Worst-caseLatency>241</Worst-caseLatency>
+            <Best-caseRealTimeLatency>2.410 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>2.410 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.410 us</Worst-caseRealTimeLatency>
+            <Interval-min>242</Interval-min>
+            <Interval-max>242</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../dct.c:120</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>10</BRAM_18K>
+            <DSP>16</DSP>
+            <FF>1159</FF>
+            <LUT>1889</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>90</DSP>
+            <FF>41600</FF>
+            <LUT>20800</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_address0</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_ce0</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_q0</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_address1</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_ce1</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_q1</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_address0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_ce0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_we0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_d0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_address1</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_ce1</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_we1</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_d1</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>dct</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_RD_Loop_Row_fu_98</InstName>
+                    <ModuleName>dct_Pipeline_RD_Loop_Row</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>98</ID>
+                    <BindInstances>icmp_ln96_fu_263_p2 add_ln96_fu_269_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_fu_120</InstName>
+                    <ModuleName>dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>120</ID>
+                    <BindInstances>icmp_ln61_fu_332_p2 add_ln61_1_fu_338_p2 add_ln61_fu_347_p2 icmp_ln39_fu_353_p2 select_ln56_fu_359_p3 select_ln61_fu_367_p3 add_ln47_8_fu_401_p2 mac_muladd_16s_15s_29s_29_4_1_U14 mac_muladd_16s_15s_13ns_29_4_1_U13 mac_muladd_16s_15s_29s_29_4_1_U15 mac_muladd_16s_15s_29s_29_4_1_U16 mul_15s_16s_29_1_1_U10 mac_muladd_16s_15s_29s_29_4_1_U17 mul_15s_16s_29_1_1_U11 mul_14ns_16s_29_1_1_U12 mac_muladd_16s_15s_29s_29_4_1_U14 mac_muladd_16s_15s_29s_29_4_1_U17 mac_muladd_16s_15s_29s_29_4_1_U16 mac_muladd_16s_15s_13ns_29_4_1_U13 mac_muladd_16s_15s_29s_29_4_1_U15 add_ln47_6_fu_507_p2 add_ln39_fu_407_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_VITIS_LOOP_71_1_fu_149</InstName>
+                    <ModuleName>dct_Pipeline_VITIS_LOOP_71_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>149</ID>
+                    <BindInstances>icmp_ln71_fu_75_p2 add_ln71_fu_81_p2 add_ln72_fu_99_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_fu_155</InstName>
+                    <ModuleName>dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>155</ID>
+                    <BindInstances>icmp_ln76_fu_325_p2 add_ln76_1_fu_331_p2 add_ln76_fu_340_p2 icmp_ln39_fu_346_p2 select_ln56_fu_352_p3 select_ln76_fu_360_p3 add_ln47_fu_492_p2 mac_muladd_16s_15s_29s_29_4_1_U44 mac_muladd_16s_15s_13ns_29_4_1_U45 mac_muladd_16s_15s_29s_29_4_1_U48 mac_muladd_16s_15s_29s_29_4_1_U46 mul_15s_16s_29_1_1_U41 mac_muladd_16s_15s_29s_29_4_1_U47 mul_15s_16s_29_1_1_U42 mul_14ns_16s_29_1_1_U43 mac_muladd_16s_15s_29s_29_4_1_U44 mac_muladd_16s_15s_29s_29_4_1_U47 mac_muladd_16s_15s_29s_29_4_1_U46 mac_muladd_16s_15s_13ns_29_4_1_U45 mac_muladd_16s_15s_29s_29_4_1_U48 add_ln47_14_fu_593_p2 add_ln39_fu_498_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_VITIS_LOOP_86_2_fu_177</InstName>
+                    <ModuleName>dct_Pipeline_VITIS_LOOP_86_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>177</ID>
+                    <BindInstances>icmp_ln86_fu_75_p2 add_ln86_fu_81_p2 add_ln87_fu_99_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_WR_Loop_Row_fu_183</InstName>
+                    <ModuleName>dct_Pipeline_WR_Loop_Row</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>183</ID>
+                    <BindInstances>icmp_ln111_fu_212_p2 add_ln111_fu_218_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>row_outbuf_U col_outbuf_U col_inbuf_U buf_2d_in_U buf_2d_in_8_U buf_2d_in_9_U buf_2d_in_10_U buf_2d_in_11_U buf_2d_in_12_U buf_2d_in_13_U buf_2d_in_14_U buf_2d_out_U dct_1d_dct_coeff_table_0_U dct_1d_dct_coeff_table_1_U dct_1d_dct_coeff_table_2_U dct_1d_dct_coeff_table_3_U dct_1d_dct_coeff_table_4_U dct_1d_dct_coeff_table_5_U dct_1d_dct_coeff_table_6_U dct_1d_dct_coeff_table_7_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>dct_Pipeline_RD_Loop_Row</Name>
+            <Loops>
+                <RD_Loop_Row/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.139</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>34</Best-caseLatency>
+                    <Average-caseLatency>34</Average-caseLatency>
+                    <Worst-caseLatency>34</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.340 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.340 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.340 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>33</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <RD_Loop_Row>
+                        <Name>RD_Loop_Row</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>32</Latency>
+                        <AbsoluteTimeLatency>0.320 us</AbsoluteTimeLatency>
+                        <PipelineII>4</PipelineII>
+                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </RD_Loop_Row>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:92~../dct.c:127</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <RD_Loop_Row>
+                            <Name>RD_Loop_Row</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../dct.c:96~../dct.c:127</SourceLocation>
+                        </RD_Loop_Row>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>23</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>145</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RD_Loop_Row" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln96_fu_263_p2" SOURCE="../dct.c:96" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln96" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RD_Loop_Row" OPTYPE="add" PRAGMA="" RTLNAME="add_ln96_fu_269_p2" SOURCE="../dct.c:96" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln96" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop</Name>
+            <Loops>
+                <Row_DCT_Loop_DCT_Outer_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.436</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.710 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.710 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.710 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Row_DCT_Loop_DCT_Outer_Loop>
+                        <Name>Row_DCT_Loop_DCT_Outer_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.690 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>7</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </Row_DCT_Loop_DCT_Outer_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:32~../dct.c:62~../dct.c:129</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Row_DCT_Loop_DCT_Outer_Loop>
+                            <Name>Row_DCT_Loop_DCT_Outer_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../dct.c:61~../dct.c:129</SourceLocation>
+                        </Row_DCT_Loop_DCT_Outer_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>8</UTIL_DSP>
+                    <FF>328</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>308</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln61_fu_332_p2" SOURCE="../dct.c:61" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln61" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_1_fu_338_p2" SOURCE="../dct.c:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln61_fu_347_p2" SOURCE="../dct.c:61" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_353_p2" SOURCE="../dct.c:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln56_fu_359_p3" SOURCE="../dct.c:56" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln61_fu_367_p3" SOURCE="../dct.c:61" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln61" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_8_fu_401_p2" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U14" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U13" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U15" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U16" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_15s_16s_29_1_1_U10" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U17" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_15s_16s_29_1_1_U11" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_16s_29_1_1_U12" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U14" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U17" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U16" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U13" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U15" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_6_fu_507_p2" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Row_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_407_p2" SOURCE="../dct.c:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_VITIS_LOOP_71_1</Name>
+            <Loops>
+                <VITIS_LOOP_71_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.701</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_71_1>
+                        <Name>VITIS_LOOP_71_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_71_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:56~../dct.c:129</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_71_1>
+                            <Name>VITIS_LOOP_71_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../dct.c:71~../dct.c:129</SourceLocation>
+                        </VITIS_LOOP_71_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>78</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_71_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln71_fu_75_p2" SOURCE="../dct.c:71" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln71" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_71_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln71_fu_81_p2" SOURCE="../dct.c:71" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln71" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_71_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln72_fu_99_p2" SOURCE="../dct.c:72" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln72" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop</Name>
+            <Loops>
+                <Col_DCT_Loop_DCT_Outer_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.436</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.710 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.710 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.710 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Col_DCT_Loop_DCT_Outer_Loop>
+                        <Name>Col_DCT_Loop_DCT_Outer_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.690 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>7</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </Col_DCT_Loop_DCT_Outer_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:32~../dct.c:77~../dct.c:129</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Col_DCT_Loop_DCT_Outer_Loop>
+                            <Name>Col_DCT_Loop_DCT_Outer_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../dct.c:76~../dct.c:129</SourceLocation>
+                        </Col_DCT_Loop_DCT_Outer_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>8</UTIL_DSP>
+                    <FF>482</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>308</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln76_fu_325_p2" SOURCE="../dct.c:76" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln76_1_fu_331_p2" SOURCE="../dct.c:76" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln76_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln76_fu_340_p2" SOURCE="../dct.c:76" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_346_p2" SOURCE="../dct.c:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln56_fu_352_p3" SOURCE="../dct.c:56" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln76_fu_360_p3" SOURCE="../dct.c:76" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_fu_492_p2" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U44" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U45" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U48" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U46" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_15s_16s_29_1_1_U41" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U47" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_15s_16s_29_1_1_U42" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_16s_29_1_1_U43" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln47_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U44" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U47" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U46" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U45" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U48" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_14_fu_593_p2" SOURCE="../dct.c:47" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln47_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Col_DCT_Loop_DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_498_p2" SOURCE="../dct.c:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_VITIS_LOOP_86_2</Name>
+            <Loops>
+                <VITIS_LOOP_86_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.701</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_86_2>
+                        <Name>VITIS_LOOP_86_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_86_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:56~../dct.c:129</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_86_2>
+                            <Name>VITIS_LOOP_86_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../dct.c:86~../dct.c:129</SourceLocation>
+                        </VITIS_LOOP_86_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>78</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_86_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln86_fu_75_p2" SOURCE="../dct.c:86" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln86" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_86_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln86_fu_81_p2" SOURCE="../dct.c:86" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln86" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_86_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln87_fu_99_p2" SOURCE="../dct.c:87" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln87" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_WR_Loop_Row</Name>
+            <Loops>
+                <WR_Loop_Row/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.139</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>34</Best-caseLatency>
+                    <Average-caseLatency>34</Average-caseLatency>
+                    <Worst-caseLatency>34</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.340 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.340 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.340 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>33</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <WR_Loop_Row>
+                        <Name>WR_Loop_Row</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>32</Latency>
+                        <AbsoluteTimeLatency>0.320 us</AbsoluteTimeLatency>
+                        <PipelineII>4</PipelineII>
+                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </WR_Loop_Row>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:107~../dct.c:132</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <WR_Loop_Row>
+                            <Name>WR_Loop_Row</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../dct.c:111~../dct.c:132</SourceLocation>
+                        </WR_Loop_Row>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>39</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>187</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="WR_Loop_Row" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln111_fu_212_p2" SOURCE="../dct.c:111" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln111" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WR_Loop_Row" OPTYPE="add" PRAGMA="" RTLNAME="add_ln111_fu_218_p2" SOURCE="../dct.c:111" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln111" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.436</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>241</Best-caseLatency>
+                    <Average-caseLatency>241</Average-caseLatency>
+                    <Worst-caseLatency>241</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.410 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.410 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.410 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>242</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../dct.c:120</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>10</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>10</UTIL_BRAM>
+                    <DSP>16</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>17</UTIL_DSP>
+                    <FF>1159</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>1889</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>9</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="row_outbuf_U" SOURCE="../dct.c:54" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="row_outbuf" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_outbuf_U" SOURCE="../dct.c:55" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_outbuf" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="col_inbuf_U" SOURCE="../dct.c:55" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="col_inbuf" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_8_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_9_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_10_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_11_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_12_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_13_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_in_14_U" SOURCE="../dct.c:123" STORAGESIZE="16 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_in_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="buf_2d_out_U" SOURCE="../dct.c:124" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="buf_2d_out" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_0_U" SOURCE="" STORAGESIZE="14 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_0" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_1_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_2_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_3_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_4_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_5_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_6_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_7_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_7" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="input" index="0" direction="in" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="input_r_address0" name="input_r_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="input_r_ce0" name="input_r_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="input_r_q0" name="input_r_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="input_r_address1" name="input_r_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="input_r_ce1" name="input_r_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="input_r_q1" name="input_r_q1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output" index="1" direction="out" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="output_r_address0" name="output_r_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="output_r_ce0" name="output_r_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_r_we0" name="output_r_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_r_d0" name="output_r_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="output_r_address1" name="output_r_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="output_r_ce1" name="output_r_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_r_we1" name="output_r_we1" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_r_d1" name="output_r_d1" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="input_r_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="input_r_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_r_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_r_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="input_r_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_r_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_r_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="input_r_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_r_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_r_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="input_r_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_r_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="output_r_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_r_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="output"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="output_r_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_r_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="output"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="output_r_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_r_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="output"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="output_r_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_r_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="output"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="input_r_address0">out, 6</column>
+                    <column name="input_r_address1">out, 6</column>
+                    <column name="input_r_q0">in, 16</column>
+                    <column name="input_r_q1">in, 16</column>
+                    <column name="output_r_address0">out, 6</column>
+                    <column name="output_r_address1">out, 6</column>
+                    <column name="output_r_d0">out, 16</column>
+                    <column name="output_r_d1">out, 16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input">in, short*</column>
+                    <column name="output">out, short*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="input">input_r_address0, port, offset</column>
+                    <column name="input">input_r_ce0, port, </column>
+                    <column name="input">input_r_q0, port, </column>
+                    <column name="input">input_r_address1, port, offset</column>
+                    <column name="input">input_r_ce1, port, </column>
+                    <column name="input">input_r_q1, port, </column>
+                    <column name="output">output_r_address0, port, offset</column>
+                    <column name="output">output_r_ce0, port, </column>
+                    <column name="output">output_r_we0, port, </column>
+                    <column name="output">output_r_d0, port, </column>
+                    <column name="output">output_r_address1, port, offset</column>
+                    <column name="output">output_r_ce1, port, </column>
+                    <column name="output">output_r_we1, port, </column>
+                    <column name="output">output_r_d1, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="pipeline" location="../dct.c:42" status="valid" parentFunction="dct_1d" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../dct.c:69" status="valid" parentFunction="dct_2d" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../dct.c:84" status="valid" parentFunction="dct_2d" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../dct.c:98" status="valid" parentFunction="read_data" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="pipeline" location="../dct.c:113" status="valid" parentFunction="write_data" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_flatten" location="../dct.c:76" status="valid" parentFunction="dct" variable="" isDirective="0" options=" "/>
+        <Pragma type="loop_flatten" location="../dct.c:76" status="valid" parentFunction="dct" variable="" isDirective="0" options=" "/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="loop_flatten" parentFunction="dct" options=" " pragmaLocId="../dct.c:61:0" pragmaLocOpt="dct/Row_DCT_Loop" srcPragmaType="pipeline" srcPragmaLoc="../dct.c:42" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../dct.c:42" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=dct/Row_DCT_Loop  " loopName="Row_DCT_Loop" loopLoc="../dct.c:61:4"/>
+        <AutoPragma type="loop_flatten" parentFunction="dct" options=" " pragmaLocId="../dct.c:76:0" pragmaLocOpt="dct/Col_DCT_Loop" srcPragmaType="pipeline" srcPragmaLoc="../dct.c:42" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../dct.c:42" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=dct/Col_DCT_Loop  " loopName="Col_DCT_Loop" loopLoc="../dct.c:76:4"/>
+        <AutoPragma type="pipeline" parentFunction="dct" options="" pragmaLocId="../dct.c:71:0" pragmaLocOpt="dct/VITIS_LOOP_71_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=dct/VITIS_LOOP_71_1 " loopName="VITIS_LOOP_71_1" loopLoc="../dct.c:71:24"/>
+        <AutoPragma type="pipeline" parentFunction="dct" options="" pragmaLocId="../dct.c:86:0" pragmaLocOpt="dct/VITIS_LOOP_86_2" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=dct/VITIS_LOOP_86_2 " loopName="VITIS_LOOP_86_2" loopLoc="../dct.c:86:24"/>
+    </AutoPragmaReport>
+</profile>

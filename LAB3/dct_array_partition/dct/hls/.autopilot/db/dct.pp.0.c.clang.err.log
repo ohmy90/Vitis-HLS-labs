@@ -1,0 +1,34 @@
+../dct.c:40:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dct_1d_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+../dct.c:57:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=col_inbuf type=2 dim=2
+                                                    ^
+../dct.c:57:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dct_2d_XLX_SEP_ PragmaOptions=variable=col_inbuf type=2 dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=col_inbuf type=2 dim=2
+^
+../dct.c:69:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dct_2d_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+../dct.c:84:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dct_2d_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+../dct.c:69:1: warning: multiple compatible 'PIPELINE' pragmas (../dct.c:69:1, ../dct.c:84:1) in the same function scope (dct_2d). Combining them into pragma 'PIPELINE II=1' [-Wignored-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+../dct.c:98:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=read_data_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+../dct.c:113:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=write_data_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=dct_XLX_SEP_ PragmaOptions=name=dct_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=dct
+^
+../dct.c:129:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=buf_2d_in type=2
+                                                    ^
+../dct.c:129:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=dct_XLX_SEP_ PragmaOptions=variable=buf_2d_in type=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=buf_2d_in type=2
+^
+11 warnings generated.

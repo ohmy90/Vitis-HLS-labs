@@ -1,0 +1,20 @@
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:205:4: remark: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+   for (j = 0; j < 8; j++)
+   ^
+   VITIS_LOOP_71_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:205:4: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:220:4: remark: Added loop label VITIS_LOOP_86_2:   [xilinx-label-all-loops]
+   for (j = 0; j < 8; j++)
+   ^
+   VITIS_LOOP_86_2: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:220:4: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:234:4: remark: Added loop label VITIS_LOOP_100_1:   [xilinx-label-all-loops]
+   for (r = 0; r < 8; r++) {
+   ^
+   VITIS_LOOP_100_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:234:4: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:249:4: remark: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+   for (r = 0; r < 8; r++) {
+   ^
+   VITIS_LOOP_115_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_array_partition\dct\hls\.autopilot\db\dct.pp.0.c:249:4: note: FIX-IT applied suggested code changes

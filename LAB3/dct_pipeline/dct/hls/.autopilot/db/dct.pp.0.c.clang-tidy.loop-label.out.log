@@ -1,0 +1,25 @@
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:177:7: remark: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+      for(n = 0, tmp = 0; n < 8; n++) {
+      ^
+      VITIS_LOOP_43_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:177:7: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:205:7: remark: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+      for(i = 0; i < 8; i++)
+      ^
+      VITIS_LOOP_71_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:205:7: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:220:7: remark: Added loop label VITIS_LOOP_86_2:   [xilinx-label-all-loops]
+      for(i = 0; i < 8; i++)
+      ^
+      VITIS_LOOP_86_2: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:220:7: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:234:7: remark: Added loop label VITIS_LOOP_100_1:   [xilinx-label-all-loops]
+      for (c = 0; c < 8; c++)
+      ^
+      VITIS_LOOP_100_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:234:7: note: FIX-IT applied suggested code changes
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:249:7: remark: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+      for (c = 0; c < 8; c++)
+      ^
+      VITIS_LOOP_115_1: 
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline\dct\hls\.autopilot\db\dct.pp.0.c:249:7: note: FIX-IT applied suggested code changes

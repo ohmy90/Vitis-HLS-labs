@@ -1,0 +1,60 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "2 1",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "dct.c",
+    "fileloc": 120,
+    "instructions": 185,
+    "loads": {
+      "L": 10,
+      "T": 8
+    },
+    "memory_accesses": 36,
+    "name": "dct",
+    "stores": {
+      "L": 10,
+      "T": 8
+    },
+    "total_instructions": 325
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 8,
+    "file": "dct.c",
+    "fileloc": 30,
+    "instructions": 74,
+    "loads": {
+      "G": 8,
+      "L": 8
+    },
+    "memory_accesses": 9,
+    "name": "dct_1d",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 74
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 8,
+    "file": "dct.c",
+    "fileloc": 30,
+    "instructions": 66,
+    "loads": {
+      "G": 8,
+      "L": 8
+    },
+    "memory_accesses": 9,
+    "name": "dct_1d",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 66
+  }
+}

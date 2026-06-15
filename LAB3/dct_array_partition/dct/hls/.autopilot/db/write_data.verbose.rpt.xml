@@ -1,0 +1,246 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'write_data'" level="0">
+<item name = "Date">Sun Jun 14 22:50:56 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 12 2025)</item>
+<item name = "Project">dct</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a35t-fgg484-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 0 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">31, 31, 0.310 us, 0.310 us, 32, 32, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 745, -</column>
+<column name="Register">-, -, 1024, -, -</column>
+<specialColumn name="Available">100, 90, 41600, 20800, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 2, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">149, 33, 1, 33</column>
+<column name="output_r_address0_local">149, 33, 6, 198</column>
+<column name="output_r_address1_local">149, 33, 6, 198</column>
+<column name="output_r_d0_local">149, 33, 16, 528</column>
+<column name="output_r_d1_local">149, 33, 16, 528</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">32, 0, 32, 0</column>
+<column name="ap_port_reg_buf_read_192">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_193">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_194">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_195">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_196">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_197">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_198">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_199">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_200">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_201">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_202">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_203">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_204">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_205">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_206">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_207">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_208">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_209">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_210">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_211">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_212">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_213">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_214">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_215">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_216">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_217">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_218">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_219">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_220">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_221">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_222">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_223">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_224">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_225">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_226">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_227">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_228">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_229">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_230">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_231">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_232">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_233">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_234">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_235">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_236">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_237">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_238">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_239">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_240">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_241">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_242">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_243">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_244">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_245">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_246">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_247">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_248">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_249">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_250">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_251">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_252">16, 0, 16, 0</column>
+<column name="ap_port_reg_buf_read_253">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, write_data, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, write_data, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, write_data, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, write_data, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, write_data, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, write_data, return value</column>
+<column name="buf_read">in, 16, ap_none, buf_read, scalar</column>
+<column name="buf_read_191">in, 16, ap_none, buf_read_191, scalar</column>
+<column name="buf_read_192">in, 16, ap_none, buf_read_192, scalar</column>
+<column name="buf_read_193">in, 16, ap_none, buf_read_193, scalar</column>
+<column name="buf_read_194">in, 16, ap_none, buf_read_194, scalar</column>
+<column name="buf_read_195">in, 16, ap_none, buf_read_195, scalar</column>
+<column name="buf_read_196">in, 16, ap_none, buf_read_196, scalar</column>
+<column name="buf_read_197">in, 16, ap_none, buf_read_197, scalar</column>
+<column name="buf_read_198">in, 16, ap_none, buf_read_198, scalar</column>
+<column name="buf_read_199">in, 16, ap_none, buf_read_199, scalar</column>
+<column name="buf_read_200">in, 16, ap_none, buf_read_200, scalar</column>
+<column name="buf_read_201">in, 16, ap_none, buf_read_201, scalar</column>
+<column name="buf_read_202">in, 16, ap_none, buf_read_202, scalar</column>
+<column name="buf_read_203">in, 16, ap_none, buf_read_203, scalar</column>
+<column name="buf_read_204">in, 16, ap_none, buf_read_204, scalar</column>
+<column name="buf_read_205">in, 16, ap_none, buf_read_205, scalar</column>
+<column name="buf_read_206">in, 16, ap_none, buf_read_206, scalar</column>
+<column name="buf_read_207">in, 16, ap_none, buf_read_207, scalar</column>
+<column name="buf_read_208">in, 16, ap_none, buf_read_208, scalar</column>
+<column name="buf_read_209">in, 16, ap_none, buf_read_209, scalar</column>
+<column name="buf_read_210">in, 16, ap_none, buf_read_210, scalar</column>
+<column name="buf_read_211">in, 16, ap_none, buf_read_211, scalar</column>
+<column name="buf_read_212">in, 16, ap_none, buf_read_212, scalar</column>
+<column name="buf_read_213">in, 16, ap_none, buf_read_213, scalar</column>
+<column name="buf_read_214">in, 16, ap_none, buf_read_214, scalar</column>
+<column name="buf_read_215">in, 16, ap_none, buf_read_215, scalar</column>
+<column name="buf_read_216">in, 16, ap_none, buf_read_216, scalar</column>
+<column name="buf_read_217">in, 16, ap_none, buf_read_217, scalar</column>
+<column name="buf_read_218">in, 16, ap_none, buf_read_218, scalar</column>
+<column name="buf_read_219">in, 16, ap_none, buf_read_219, scalar</column>
+<column name="buf_read_220">in, 16, ap_none, buf_read_220, scalar</column>
+<column name="buf_read_221">in, 16, ap_none, buf_read_221, scalar</column>
+<column name="buf_read_222">in, 16, ap_none, buf_read_222, scalar</column>
+<column name="buf_read_223">in, 16, ap_none, buf_read_223, scalar</column>
+<column name="buf_read_224">in, 16, ap_none, buf_read_224, scalar</column>
+<column name="buf_read_225">in, 16, ap_none, buf_read_225, scalar</column>
+<column name="buf_read_226">in, 16, ap_none, buf_read_226, scalar</column>
+<column name="buf_read_227">in, 16, ap_none, buf_read_227, scalar</column>
+<column name="buf_read_228">in, 16, ap_none, buf_read_228, scalar</column>
+<column name="buf_read_229">in, 16, ap_none, buf_read_229, scalar</column>
+<column name="buf_read_230">in, 16, ap_none, buf_read_230, scalar</column>
+<column name="buf_read_231">in, 16, ap_none, buf_read_231, scalar</column>
+<column name="buf_read_232">in, 16, ap_none, buf_read_232, scalar</column>
+<column name="buf_read_233">in, 16, ap_none, buf_read_233, scalar</column>
+<column name="buf_read_234">in, 16, ap_none, buf_read_234, scalar</column>
+<column name="buf_read_235">in, 16, ap_none, buf_read_235, scalar</column>
+<column name="buf_read_236">in, 16, ap_none, buf_read_236, scalar</column>
+<column name="buf_read_237">in, 16, ap_none, buf_read_237, scalar</column>
+<column name="buf_read_238">in, 16, ap_none, buf_read_238, scalar</column>
+<column name="buf_read_239">in, 16, ap_none, buf_read_239, scalar</column>
+<column name="buf_read_240">in, 16, ap_none, buf_read_240, scalar</column>
+<column name="buf_read_241">in, 16, ap_none, buf_read_241, scalar</column>
+<column name="buf_read_242">in, 16, ap_none, buf_read_242, scalar</column>
+<column name="buf_read_243">in, 16, ap_none, buf_read_243, scalar</column>
+<column name="buf_read_244">in, 16, ap_none, buf_read_244, scalar</column>
+<column name="buf_read_245">in, 16, ap_none, buf_read_245, scalar</column>
+<column name="buf_read_246">in, 16, ap_none, buf_read_246, scalar</column>
+<column name="buf_read_247">in, 16, ap_none, buf_read_247, scalar</column>
+<column name="buf_read_248">in, 16, ap_none, buf_read_248, scalar</column>
+<column name="buf_read_249">in, 16, ap_none, buf_read_249, scalar</column>
+<column name="buf_read_250">in, 16, ap_none, buf_read_250, scalar</column>
+<column name="buf_read_251">in, 16, ap_none, buf_read_251, scalar</column>
+<column name="buf_read_252">in, 16, ap_none, buf_read_252, scalar</column>
+<column name="buf_read_253">in, 16, ap_none, buf_read_253, scalar</column>
+<column name="output_r_address0">out, 6, ap_memory, output_r, array</column>
+<column name="output_r_ce0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_we0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_d0">out, 16, ap_memory, output_r, array</column>
+<column name="output_r_address1">out, 6, ap_memory, output_r, array</column>
+<column name="output_r_ce1">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_we1">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_d1">out, 16, ap_memory, output_r, array</column>
+</table>
+</item>
+</section>
+</profile>

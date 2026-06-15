@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Jun 14 21:32:23 2026
+# Process ID         : 14884
+# Current directory  : C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/dct/xsim_script.tcl}
+# Log file           : C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct/hls/sim/verilog/xsim.log
+# Journal file       : C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct/hls/sim/verilog\xsim.jou
+# Running On         : BR_DUONG
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5800XT 8-Core Processor            
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17095 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27833 MB
+# Available Virtual  : 9393 MB
+#-----------------------------------------------------------
+source xsim.dir/dct/xsim_script.tcl
+# xsim {dct} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=dct_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {dct.tcl}
+Time resolution is 1 ps
+source dct.tcl
+## run all
+UVM_INFO D:/movies/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO D:/movies/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO D:/movies/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------
+Name                     Type                   Size  Value
+-----------------------------------------------------------
+uvm_test_top             dct_test_lib           -     @342 
+  top_env                dct_env                -     @353 
+    dct_virtual_sqr      dct_virtual_sequencer  -     @390 
+      rsp_export         uvm_analysis_export    -     @399 
+      seq_item_export    uvm_seq_item_pull_imp  -     @517 
+      arbitration_queue  array                  0     -    
+      lock_queue         array                  0     -    
+      num_last_reqs      integral               32    'd1  
+      num_last_rsps      integral               32    'd1  
+    refm                 dct_reference_model    -     @368 
+      trans_num_idx      integral               32    'h0  
+    subsys_mon           dct_subsystem_monitor  -     @381 
+      scbd               dct_scoreboard         -     @537 
+        refm             dct_reference_model    -     @368 
+          trans_num_idx  integral               32    'h0  
+    refm                 dct_reference_model    -     @368 
+    dct_virtual_sqr      dct_virtual_sequencer  -     @390 
+    dct_cfg              dct_config             -     @367 
+      check_ena          integral               32    'h0  
+      cover_ena          integral               32    'h0  
+-----------------------------------------------------------
+
+UVM_INFO D:/movies/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "4245000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4295 ns : File "D:/movies/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Jun 14 21:32:27 2026...

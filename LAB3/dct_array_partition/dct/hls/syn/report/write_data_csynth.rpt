@@ -1,0 +1,254 @@
+
+
+================================================================
+== Vitis HLS Report for 'write_data'
+================================================================
+* Date:           Sun Jun 14 22:50:56 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        dct
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-fgg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|      0 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       31|       31|  0.310 us|  0.310 us|   32|   32|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      -|      -|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      0|    745|    -|
+|Register         |        -|   -|   1024|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|   1024|    745|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  90|  41600|  20800|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|      2|      3|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-------------------------+-----+-----------+-----+-----------+
+    |           Name          | LUT | Input Size| Bits| Total Bits|
+    +-------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                |  149|         33|    1|         33|
+    |output_r_address0_local  |  149|         33|    6|        198|
+    |output_r_address1_local  |  149|         33|    6|        198|
+    |output_r_d0_local        |  149|         33|   16|        528|
+    |output_r_d1_local        |  149|         33|   16|        528|
+    +-------------------------+-----+-----------+-----+-----------+
+    |Total                    |  745|        165|   45|       1485|
+    +-------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                 |  32|   0|   32|          0|
+    |ap_port_reg_buf_read_192  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_193  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_194  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_195  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_196  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_197  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_198  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_199  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_200  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_201  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_202  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_203  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_204  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_205  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_206  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_207  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_208  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_209  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_210  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_211  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_212  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_213  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_214  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_215  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_216  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_217  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_218  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_219  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_220  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_221  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_222  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_223  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_224  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_225  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_226  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_227  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_228  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_229  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_230  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_231  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_232  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_233  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_234  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_235  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_236  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_237  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_238  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_239  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_240  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_241  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_242  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_243  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_244  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_245  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_246  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_247  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_248  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_249  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_250  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_251  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_252  |  16|   0|   16|          0|
+    |ap_port_reg_buf_read_253  |  16|   0|   16|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     |1024|   0| 1024|          0|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|    write_data|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|    write_data|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|    write_data|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|    write_data|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|    write_data|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|    write_data|  return value|
+|buf_read           |   in|   16|     ap_none|      buf_read|        scalar|
+|buf_read_191       |   in|   16|     ap_none|  buf_read_191|        scalar|
+|buf_read_192       |   in|   16|     ap_none|  buf_read_192|        scalar|
+|buf_read_193       |   in|   16|     ap_none|  buf_read_193|        scalar|
+|buf_read_194       |   in|   16|     ap_none|  buf_read_194|        scalar|
+|buf_read_195       |   in|   16|     ap_none|  buf_read_195|        scalar|
+|buf_read_196       |   in|   16|     ap_none|  buf_read_196|        scalar|
+|buf_read_197       |   in|   16|     ap_none|  buf_read_197|        scalar|
+|buf_read_198       |   in|   16|     ap_none|  buf_read_198|        scalar|
+|buf_read_199       |   in|   16|     ap_none|  buf_read_199|        scalar|
+|buf_read_200       |   in|   16|     ap_none|  buf_read_200|        scalar|
+|buf_read_201       |   in|   16|     ap_none|  buf_read_201|        scalar|
+|buf_read_202       |   in|   16|     ap_none|  buf_read_202|        scalar|
+|buf_read_203       |   in|   16|     ap_none|  buf_read_203|        scalar|
+|buf_read_204       |   in|   16|     ap_none|  buf_read_204|        scalar|
+|buf_read_205       |   in|   16|     ap_none|  buf_read_205|        scalar|
+|buf_read_206       |   in|   16|     ap_none|  buf_read_206|        scalar|
+|buf_read_207       |   in|   16|     ap_none|  buf_read_207|        scalar|
+|buf_read_208       |   in|   16|     ap_none|  buf_read_208|        scalar|
+|buf_read_209       |   in|   16|     ap_none|  buf_read_209|        scalar|
+|buf_read_210       |   in|   16|     ap_none|  buf_read_210|        scalar|
+|buf_read_211       |   in|   16|     ap_none|  buf_read_211|        scalar|
+|buf_read_212       |   in|   16|     ap_none|  buf_read_212|        scalar|
+|buf_read_213       |   in|   16|     ap_none|  buf_read_213|        scalar|
+|buf_read_214       |   in|   16|     ap_none|  buf_read_214|        scalar|
+|buf_read_215       |   in|   16|     ap_none|  buf_read_215|        scalar|
+|buf_read_216       |   in|   16|     ap_none|  buf_read_216|        scalar|
+|buf_read_217       |   in|   16|     ap_none|  buf_read_217|        scalar|
+|buf_read_218       |   in|   16|     ap_none|  buf_read_218|        scalar|
+|buf_read_219       |   in|   16|     ap_none|  buf_read_219|        scalar|
+|buf_read_220       |   in|   16|     ap_none|  buf_read_220|        scalar|
+|buf_read_221       |   in|   16|     ap_none|  buf_read_221|        scalar|
+|buf_read_222       |   in|   16|     ap_none|  buf_read_222|        scalar|
+|buf_read_223       |   in|   16|     ap_none|  buf_read_223|        scalar|
+|buf_read_224       |   in|   16|     ap_none|  buf_read_224|        scalar|
+|buf_read_225       |   in|   16|     ap_none|  buf_read_225|        scalar|
+|buf_read_226       |   in|   16|     ap_none|  buf_read_226|        scalar|
+|buf_read_227       |   in|   16|     ap_none|  buf_read_227|        scalar|
+|buf_read_228       |   in|   16|     ap_none|  buf_read_228|        scalar|
+|buf_read_229       |   in|   16|     ap_none|  buf_read_229|        scalar|
+|buf_read_230       |   in|   16|     ap_none|  buf_read_230|        scalar|
+|buf_read_231       |   in|   16|     ap_none|  buf_read_231|        scalar|
+|buf_read_232       |   in|   16|     ap_none|  buf_read_232|        scalar|
+|buf_read_233       |   in|   16|     ap_none|  buf_read_233|        scalar|
+|buf_read_234       |   in|   16|     ap_none|  buf_read_234|        scalar|
+|buf_read_235       |   in|   16|     ap_none|  buf_read_235|        scalar|
+|buf_read_236       |   in|   16|     ap_none|  buf_read_236|        scalar|
+|buf_read_237       |   in|   16|     ap_none|  buf_read_237|        scalar|
+|buf_read_238       |   in|   16|     ap_none|  buf_read_238|        scalar|
+|buf_read_239       |   in|   16|     ap_none|  buf_read_239|        scalar|
+|buf_read_240       |   in|   16|     ap_none|  buf_read_240|        scalar|
+|buf_read_241       |   in|   16|     ap_none|  buf_read_241|        scalar|
+|buf_read_242       |   in|   16|     ap_none|  buf_read_242|        scalar|
+|buf_read_243       |   in|   16|     ap_none|  buf_read_243|        scalar|
+|buf_read_244       |   in|   16|     ap_none|  buf_read_244|        scalar|
+|buf_read_245       |   in|   16|     ap_none|  buf_read_245|        scalar|
+|buf_read_246       |   in|   16|     ap_none|  buf_read_246|        scalar|
+|buf_read_247       |   in|   16|     ap_none|  buf_read_247|        scalar|
+|buf_read_248       |   in|   16|     ap_none|  buf_read_248|        scalar|
+|buf_read_249       |   in|   16|     ap_none|  buf_read_249|        scalar|
+|buf_read_250       |   in|   16|     ap_none|  buf_read_250|        scalar|
+|buf_read_251       |   in|   16|     ap_none|  buf_read_251|        scalar|
+|buf_read_252       |   in|   16|     ap_none|  buf_read_252|        scalar|
+|buf_read_253       |   in|   16|     ap_none|  buf_read_253|        scalar|
+|output_r_address0  |  out|    6|   ap_memory|      output_r|         array|
+|output_r_ce0       |  out|    1|   ap_memory|      output_r|         array|
+|output_r_we0       |  out|    1|   ap_memory|      output_r|         array|
+|output_r_d0        |  out|   16|   ap_memory|      output_r|         array|
+|output_r_address1  |  out|    6|   ap_memory|      output_r|         array|
+|output_r_ce1       |  out|    1|   ap_memory|      output_r|         array|
+|output_r_we1       |  out|    1|   ap_memory|      output_r|         array|
+|output_r_d1        |  out|   16|   ap_memory|      output_r|         array|
++-------------------+-----+-----+------------+--------------+--------------+
+

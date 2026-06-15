@@ -1,0 +1,25 @@
+06/14/26 22:49:56: Running xcd server. This server was built by gradle.
+06/14/26 22:49:56: Server was asked to start on port: '52723'
+06/14/26 22:49:56: Server is using token UUID: 'fea8143c-b400-4a6d-9374-334e9bf1cb2a'
+06/14/26 22:49:56: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+06/14/26 22:49:56: Attempting to start server on port '52723'
+06/14/26 22:49:56: Running Dispatch Server
+06/14/26 22:49:56: Version 2.2.0
+06/14/26 22:49:58: Dispatch Server: Accepted socket connection from client
+06/14/26 22:49:58: Starting Socket connection
+06/14/26 22:49:58: EXCHANGE_TOKEN received, server token: fea8143c-b400-4a6d-9374-334e9bf1cb2a, passed token: fea8143c-b400-4a6d-9374-334e9bf1cb2a
+06/14/26 22:49:59: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+06/14/26 22:49:59: SESSION_MGR: creating session with session uuid: '4ed1c192-2013-4f02-bd82-cecc660f08d6' and name 'v++_compile_dct'
+06/14/26 22:49:59: KERNEL_SVC: creating session with uuid: '4ed1c192-2013-4f02-bd82-cecc660f08d6' and name 'v++_compile_dct'
+06/14/26 22:49:59: GUIDANCE_SMGR: creating guidance session with uuid: '4ed1c192-2013-4f02-bd82-cecc660f08d6' and name 'v++_compile_dct'
+06/14/26 22:49:59: SYSTEM_DIAGRAM: creating session with uuid: '4ed1c192-2013-4f02-bd82-cecc660f08d6' and name 'v++_compile_dct'
+06/14/26 22:50:10: Dispatch Server: Accepted socket connection from client
+06/14/26 22:50:10: Starting Socket connection
+06/14/26 22:51:00: SESSION_MGR: closing session for UUID '4ed1c192-2013-4f02-bd82-cecc660f08d6' with name 'v++_compile_dct'
+06/14/26 22:51:00: KERNEL_SVC: closing session for UUID '4ed1c192-2013-4f02-bd82-cecc660f08d6' with name 'v++_compile_dct'
+06/14/26 22:51:00: GUIDANCE_SMGR: closing session for UUID '4ed1c192-2013-4f02-bd82-cecc660f08d6' with name 'v++_compile_dct'
+06/14/26 22:51:00: SYSTEM_DIAGRAM: closing session for UUID '4ed1c192-2013-4f02-bd82-cecc660f08d6' with name 'v++_compile_dct'
+06/14/26 22:51:00: STOP_SERVER received, server token: fea8143c-b400-4a6d-9374-334e9bf1cb2a, passed token: fea8143c-b400-4a6d-9374-334e9bf1cb2a
+06/14/26 22:51:00: Socket received request to stop server.
+06/14/26 22:51:00: Dispatch Server: do_await_stop
+06/14/26 22:51:00: SERVER: destructor for server bound to port 52723

@@ -1,0 +1,614 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dct.c' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dct.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../dct_test.c' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_test.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../in.dat' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/in.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../out.golden.dat' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/out.golden.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dct' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tfgg484-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-fgg484-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.631 seconds; current allocated memory: 139.152 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../dct.c' ... 
+WARNING: [HLS 207-7036] unexpected pragma argument '2', expects identifier (../dct.c:57:53)
+WARNING: [HLS 207-7018] multiple compatible 'PIPELINE' pragmas (../dct.c:69:1, ../dct.c:84:1) in the same function scope (dct_2d). Combining them into pragma 'PIPELINE II=1' (../dct.c:69:1)
+WARNING: [HLS 207-7036] unexpected pragma argument '2', expects identifier (../dct.c:131:53)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.186 seconds; current allocated memory: 141.555 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 246 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 6,798 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,924 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,924 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,924 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,980 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,980 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,980 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,980 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,980 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,980 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,669 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,703 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,434 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,383 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,389 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_115_1' is marked as complete unroll implied by the pipeline pragma (../dct.c:115:22)
+INFO: [HLS 214-291] Loop 'WR_Loop_Col' is marked as complete unroll implied by the pipeline pragma (../dct.c:118:7)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_86_2' is marked as complete unroll implied by the pipeline pragma (../dct.c:86:21)
+INFO: [HLS 214-291] Loop 'Xpose_Col_Inner_Loop' is marked as complete unroll implied by the pipeline pragma (../dct.c:89:7)
+INFO: [HLS 214-291] Loop 'Col_DCT_Loop' is marked as complete unroll implied by the pipeline pragma (../dct.c:79:4)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_71_1' is marked as complete unroll implied by the pipeline pragma (../dct.c:71:21)
+INFO: [HLS 214-291] Loop 'Xpose_Row_Inner_Loop' is marked as complete unroll implied by the pipeline pragma (../dct.c:74:7)
+INFO: [HLS 214-291] Loop 'Row_DCT_Loop' is marked as complete unroll implied by the pipeline pragma (../dct.c:64:4)
+INFO: [HLS 214-291] Loop 'DCT_Outer_Loop' is marked as complete unroll implied by the pipeline pragma (../dct.c:39:4)
+INFO: [HLS 214-291] Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma (../dct.c:44:7)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_100_1' is marked as complete unroll implied by the pipeline pragma (../dct.c:100:22)
+INFO: [HLS 214-291] Loop 'RD_Loop_Col' is marked as complete unroll implied by the pipeline pragma (../dct.c:103:7)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_115_1' (../dct.c:115:22) in function 'write_data' completely with a factor of 8 (../dct.c:109:0)
+INFO: [HLS 214-186] Unrolling loop 'WR_Loop_Col' (../dct.c:118:7) in function 'write_data' completely with a factor of 8 (../dct.c:109:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_86_2' (../dct.c:86:21) in function 'dct_2d' completely with a factor of 8 (../dct.c:54:0)
+INFO: [HLS 214-186] Unrolling loop 'Xpose_Col_Inner_Loop' (../dct.c:89:7) in function 'dct_2d' completely with a factor of 8 (../dct.c:54:0)
+INFO: [HLS 214-186] Unrolling loop 'Col_DCT_Loop' (../dct.c:79:4) in function 'dct_2d' completely with a factor of 8 (../dct.c:54:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_71_1' (../dct.c:71:21) in function 'dct_2d' completely with a factor of 8 (../dct.c:54:0)
+INFO: [HLS 214-186] Unrolling loop 'Xpose_Row_Inner_Loop' (../dct.c:74:7) in function 'dct_2d' completely with a factor of 8 (../dct.c:54:0)
+INFO: [HLS 214-186] Unrolling loop 'Row_DCT_Loop' (../dct.c:64:4) in function 'dct_2d' completely with a factor of 8 (../dct.c:54:0)
+INFO: [HLS 214-186] Unrolling loop 'DCT_Outer_Loop' (../dct.c:39:4) in function 'dct_1d' completely with a factor of 8 (../dct.c:31:0)
+WARNING: [HLS 214-189] Pipeline directive for loop 'DCT_Outer_Loop' (../dct.c:39:4) in function 'dct_1d' has been removed because the loop is unrolled completely (../dct.c:40:1)
+INFO: [HLS 214-186] Unrolling loop 'DCT_Inner_Loop' (../dct.c:44:7) in function 'dct_1d' completely with a factor of 8 (../dct.c:31:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_100_1' (../dct.c:100:22) in function 'read_data' completely with a factor of 8 (../dct.c:94:0)
+INFO: [HLS 214-186] Unrolling loop 'RD_Loop_Col' (../dct.c:103:7) in function 'read_data' completely with a factor of 8 (../dct.c:94:0)
+INFO: [HLS 214-364] Automatically inlining function 'dct_1d' to improve effectiveness of pipeline pragma in function 'dct_2d' (../dct.c:65:7)
+INFO: [HLS 214-364] Automatically inlining function 'dct_1d' to improve effectiveness of pipeline pragma in function 'dct_2d' (../dct.c:80:7)
+INFO: [HLS 214-449] Partitioning array 'buf_2d_in' dimension 2 due to constant index. (../dct.c:128:10)
+INFO: [HLS 214-449] Partitioning array 'buf_2d_out' dimension 1 due to constant index. (../dct.c:129:10)
+INFO: [HLS 214-449] Partitioning array 'buf_2d_out' dimension 2 due to constant index. (../dct.c:129:10)
+INFO: [HLS 214-449] Partitioning array 'row_outbuf' dimension 2 due to constant index. (../dct.c:55:15)
+INFO: [HLS 214-449] Partitioning array 'col_outbuf' dimension 2 due to constant index. (../dct.c:56:15)
+INFO: [HLS 214-449] Partitioning array 'col_inbuf' dimension 2 due to constant index. (../dct.c:56:33)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'row_outbuf' due to pipeline pragma (../dct.c:69:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'col_inbuf' due to pipeline pragma (../dct.c:69:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'col_outbuf' due to pipeline pragma (../dct.c:69:1)
+INFO: [HLS 214-248] Applying array_partition to 'row_outbuf': Cyclic partitioning with factor 3 on dimension 1. Complete partitioning on dimension 2. (../dct.c:55:15)
+INFO: [HLS 214-248] Applying array_partition to 'col_outbuf': Cyclic partitioning with factor 3 on dimension 1. Complete partitioning on dimension 2. (../dct.c:56:15)
+INFO: [HLS 214-248] Applying array_partition to 'col_inbuf': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../dct.c:56:33)
+INFO: [HLS 214-248] Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2. (../dct.c:128:10)
+INFO: [HLS 214-248] Applying array_partition to 'buf_2d_out': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../dct.c:129:10)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.842 seconds; current allocated memory: 144.449 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 144.449 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 151.430 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 155.055 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'dct' (../dct.c:123:1), detected/extracted 3 process function(s): 
+	 'read_data'
+	 'dct_2d'
+	 'write_data'.
+INFO: [XFORM 203-11] Balancing expressions in function 'dct_2d' (../dct.c:53)...408 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.527 seconds; current allocated memory: 180.336 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.551 seconds; current allocated memory: 206.031 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'read_data'.
+WARNING: [HLS 200-448] Lower bound of II is 32 due to multiple 'load' operation 16 bit ('input_r_load', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_1', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_2', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_3', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_4', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_5', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_6', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_7', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_8', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_9', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_10', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_11', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_12', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_13', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_14', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_15', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_16', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_17', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_18', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_19', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_20', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_21', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_22', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_23', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_24', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_25', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_26', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_27', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_28', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_29', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_30', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_31', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_32', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_33', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_34', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_35', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_36', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_37', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_38', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_39', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_40', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_41', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_42', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_43', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_44', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_45', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_46', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_47', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_48', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_49', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_50', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_51', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_52', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_53', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_54', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_55', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_56', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_57', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_58', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_59', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_60', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_61', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_62', ../dct.c:104) on array 'input_r', 'load' operation 16 bit ('input_r_load_63', ../dct.c:104) on array 'input_r' accessing core:RAM:input_r
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 32, Depth = 33, function 'read_data'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.71 seconds; current allocated memory: 211.336 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 212.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_485) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_484) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_483) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_482) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_481) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_480) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_477) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_476) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_475) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_474) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_469) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_468) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_467) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_466) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_465) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_464) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_461) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_460) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_459) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_458) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_454) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_453) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_452) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_451) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_450) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_449) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_446) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_445) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_444) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_443) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_438) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_437) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_436) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_435) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_434) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_433) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_430) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_429) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_428) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_427) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_423) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_422) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_421) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_420) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_419) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_418) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_415) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_414) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_413) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_412) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_407) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_406) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_405) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_404) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_403) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_402) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_399) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_398) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_397) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_396) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_392) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_391) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_390) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_389) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_388) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_387) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_384) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_383) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_382) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_381) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_376) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_375) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_374) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_373) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_372) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_371) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_368) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_367) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_366) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_365) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_361) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_360) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_359) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_358) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_357) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_356) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_353) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_352) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_351) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_350) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_345) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_344) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_343) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_342) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_341) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_340) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_337) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_336) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_335) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_334) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_330) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_329) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_328) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_327) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_326) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_325) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_322) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_321) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_320) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_319) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_314) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_313) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_312) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_311) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_310) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_309) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_306) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_305) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_304) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_303) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_299) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_298) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_297) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_296) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_295) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_294) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_291) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_290) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_289) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_288) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_283) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_282) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_281) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_280) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_279) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_278) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_275) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_274) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_273) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_272) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_268) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_267) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_266) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_265) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_263) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_260) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_259) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_258) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_257) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_252) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_250) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_248) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_247) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_244) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_242) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_236) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_234) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_232) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_228) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_226) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_222) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_220) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_218) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_214) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_213) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_212) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_211) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_206) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_204) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_202) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_198) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_196) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_190) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_188) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_184) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_182) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_176) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_158) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_154) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_142) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_136) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_128) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_122) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_116) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_108) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_70) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln48_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'dct_2d'.
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_0_load', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_0', 'load' operation 16 bit ('in_block_0_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_0' accessing core:RAM:in_block_0
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_1_load', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_1', 'load' operation 16 bit ('in_block_1_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_1' accessing core:RAM:in_block_1
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_2_load', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_2', 'load' operation 16 bit ('in_block_2_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_2' accessing core:RAM:in_block_2
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_3_load', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_3', 'load' operation 16 bit ('in_block_3_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_3' accessing core:RAM:in_block_3
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_4_load', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_4', 'load' operation 16 bit ('in_block_4_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_4' accessing core:RAM:in_block_4
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_5_load', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_5', 'load' operation 16 bit ('in_block_5_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_5' accessing core:RAM:in_block_5
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_6_load', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_6', 'load' operation 16 bit ('in_block_6_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_6' accessing core:RAM:in_block_6
+WARNING: [HLS 200-448] Lower bound of II is 4 due to multiple 'load' operation 16 bit ('in_block_7_load', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_1', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_2', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_3', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_4', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_5', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_6', ../dct.c:46->../dct.c:65) on array 'in_block_7', 'load' operation 16 bit ('in_block_7_load_7', ../dct.c:46->../dct.c:65) on array 'in_block_7' accessing core:RAM:in_block_7
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 15, function 'dct_2d'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 18.334 seconds; current allocated memory: 240.543 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.931 seconds; current allocated memory: 240.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'write_data'.
+WARNING: [HLS 200-448] Lower bound of II is 32 due to multiple 'store' operation ('output_r_addr_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_1_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_2_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_3_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_4_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_5_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_6_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_7_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_8_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_9_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_10_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_11_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_12_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_13_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_14_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_15_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_16_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_17_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_18_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_19_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_20_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_21_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_22_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_23_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_24_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_25_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_26_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_27_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_28_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_29_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_30_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_31_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_32_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_33_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_34_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_35_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_36_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_37_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_38_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_39_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_40_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_41_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_42_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_43_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_44_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_45_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_46_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_47_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_48_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_49_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_50_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_51_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_52_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_53_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_54_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_55_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_56_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_57_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_58_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_59_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_60_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_61_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_62_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r', 'store' operation ('output_r_addr_63_write_ln119', ../dct.c:119) of variable 'buf', ../dct.c:108 16 bit on array 'output_r' accessing core:RAM:output_r
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 32, Depth = 32, function 'write_data'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.715 seconds; current allocated memory: 240.543 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 240.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (8.589 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'dct' consists of the following:
+	'call' operation 1024 bit ('dct_2d_ret', ../dct.c:135) to 'dct_2d' [18]  (5.402 ns)
+	'call' operation ('_ln138', ../dct.c:138) to 'write_data' [83]  (3.187 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 240.543 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 240.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'read_data' pipeline 'read_data' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_data'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 240.543 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_2d' pipeline 'dct_2d' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_18s_16s_13ns_29s_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_submuladd_16s_16s_12ns_29s_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_submuladd_16s_16s_13ns_29s_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_submuladd_18s_16s_14ns_29s_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14ns_13ns_29_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14ns_29s_29_4_1': 82 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_13ns_29_4_1': 30 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29s_29_4_1': 50 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_12ns_13ns_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_12ns_29s_29_4_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_13ns_13ns_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_13ns_29s_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_18s_13ns_13ns_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_18s_14ns_13ns_29_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15ns_29_1_1': 44 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15s_29_1_1': 48 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_17s_13ns_29_1_1': 20 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_17s_14ns_29_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.151 seconds; current allocated memory: 283.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_data'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 3 seconds. Elapsed time: 5.052 seconds; current allocated memory: 330.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [HLS 200-740] Implementing PIPO dct_buf_2d_in_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'dct_buf_2d_in_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_1_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_2_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_3_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_4_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_5_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_6_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_7_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_8_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_9_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_10_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_11_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_12_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_13_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_14_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_15_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_16_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_17_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_18_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_19_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_20_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_21_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_22_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_23_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_24_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_25_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_26_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_27_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_28_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_29_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_30_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_31_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_32_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_33_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_34_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_35_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_36_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_37_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_38_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_39_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_40_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_41_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_42_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_43_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_44_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_45_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_46_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_47_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_48_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_49_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_50_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_51_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_52_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_53_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_54_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_55_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_56_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_57_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_58_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_59_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_60_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_61_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_62_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'buf_2d_out_63_U(dct_fifo_w16_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.504 seconds; current allocated memory: 330.145 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.026 seconds; current allocated memory: 332.641 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_dataflow/dct/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.787 seconds; current allocated memory: 348.598 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+INFO: [HLS 200-789] **** Estimated Fmax: 116.43 MHz
+INFO: [HLS 200-112] Total CPU user time: 12 seconds. Total CPU system time: 6 seconds. Total elapsed time: 50.733 seconds; peak allocated memory: 348.660 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 54s

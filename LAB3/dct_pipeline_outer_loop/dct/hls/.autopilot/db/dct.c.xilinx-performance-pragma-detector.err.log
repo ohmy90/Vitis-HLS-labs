@@ -1,0 +1,3 @@
+C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\..\dct.c:67:1: warning: multiple compatible 'PIPELINE' pragmas (C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\..\dct.c:67:1, C:\Users\duong\Desktop\xup_high_level_synthesis_design_flow-main\source\lab3\dct_pipeline_outer_loop\..\dct.c:82:1) in the same function scope (dct_2d). Combining them into pragma 'PIPELINE II=1' [-Wignored-hls-pragmas]
+#pragma HLS pipeline II=1
+^

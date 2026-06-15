@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="../dct.c" line="102" pragmaType="pipeline" parentfunction="read_data" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../dct.c" line="118" pragmaType="pipeline" parentfunction="write_data" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../dct.c" line="40" pragmaType="pipeline" parentfunction="dct_1d" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../dct.c" line="87" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../dct.c" line="71" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../dct.c" line="129" pragmaType="dataflow" parentfunction="dct" disable_start_propagation="0"/>
+</pragmas>

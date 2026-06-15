@@ -1,0 +1,638 @@
+--- !Passed
+Pass:            reflow-check-pragma-conflict
+Name:            FunctionPragmaConflictWarn
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'In function '''
+  - Function:        dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''', '
+  - String:          'INLINE ('
+  - PragmaLoc:       '../dct.c:55:1'
+    DebugLoc:        { File: ../dct.c, Line: 55, Column: 1 }
+  - String:          ') '
+  - String:          'of a non dataflow function into a region with DATAFLOW ('
+  - PragmaLoc:       '../dct.c:130:1'
+    DebugLoc:        { File: ../dct.c, Line: 130, Column: 1 }
+  - String:          ') '
+  - String:          may break the canonical form
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 66, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 138, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: ../dct.c, Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../dct.c, Line: 140, Column: 4 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 82, Column: 7 }
+Function:        dct
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 143, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: ../dct.c, Line: 113, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 92, Column: 7 }
+Function:        dct
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 76, Column: 7 }
+Function:        dct
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 123, Column: 7 }
+Function:        write_data
+Args:            
+  - String:          'Loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 44, Column: 7 }
+Function:        dct_1d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 107, Column: 7 }
+Function:        read_data
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:92:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:76:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 113, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:123:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 97, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:107:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 138, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: ../dct.c, Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 66, Column: 7 }
+Function:        dct
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 143, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: ../dct.c, Line: 113, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_dct_ir
+Args:            
+  - Callee:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_dct_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 57, Column: 33 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_inbuf.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 133, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf_2d_in
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 34, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           dct_1d.dct_coeff_table
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 134, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           buf_2d_out
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 15 }
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=row_outbuf.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - VarLoc:          '../dct.c:56:15'
+  - String:          ' '
+  - PragmaSrcLoc:    '../dct.c:72:1'
+    DebugLoc:        { File: ../dct.c, Line: 72, Column: 1 }
+  - VarName:         row_outbuf.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../dct.c, Line: 72, Column: 1 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            row_outbuf.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../dct.c, Line: 57, Column: 15 }
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=col_outbuf.i'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - VarLoc:          '../dct.c:57:15'
+  - String:          ' '
+  - PragmaSrcLoc:    '../dct.c:88:1'
+    DebugLoc:        { File: ../dct.c, Line: 88, Column: 1 }
+  - VarName:         col_outbuf.i
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../dct.c, Line: 88, Column: 1 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            col_outbuf.i
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 34, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          dct_1d.dct_coeff_table
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 15 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          row_outbuf.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 57, Column: 15 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_outbuf.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 134, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf_2d_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-extract-cfg-in-dataflow
+Name:            LoopExtractionForDataflow
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 4 }
+Function:        dct
+Args:            
+  - String:          'Changing loop '''
+  - LoopName:        Loop_Row_DCT_Loop_proc
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:65:4'
+  - String:          ') to a process function for dataflow in function '''
+  - Name:            dct
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-extract-cfg-in-dataflow
+Name:            LoopExtractionForDataflow
+DebugLoc:        { File: ../dct.c, Line: 71, Column: 4 }
+Function:        dct
+Args:            
+  - String:          'Changing loop '''
+  - LoopName:        Loop_Xpose_Row_Outer_Loop_proc
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:71:4'
+  - String:          ') to a process function for dataflow in function '''
+  - Name:            dct
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-extract-cfg-in-dataflow
+Name:            LoopExtractionForDataflow
+DebugLoc:        { File: ../dct.c, Line: 81, Column: 4 }
+Function:        dct
+Args:            
+  - String:          'Changing loop '''
+  - LoopName:        Loop_Col_DCT_Loop_proc
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:81:4'
+  - String:          ') to a process function for dataflow in function '''
+  - Name:            dct
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-extract-cfg-in-dataflow
+Name:            LoopExtractionForDataflow
+DebugLoc:        { File: ../dct.c, Line: 87, Column: 4 }
+Function:        dct
+Args:            
+  - String:          'Changing loop '''
+  - LoopName:        Loop_Xpose_Col_Outer_Loop_proc
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:87:4'
+  - String:          ') to a process function for dataflow in function '''
+  - Name:            dct
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 66, Column: 7 }
+Function:        Loop_Row_DCT_Loop_proc
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Loop_Row_DCT_Loop_proc
+    DebugLoc:        { File: ../dct.c, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 82, Column: 7 }
+Function:        Loop_Col_DCT_Loop_proc
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Loop_Col_DCT_Loop_proc
+    DebugLoc:        { File: ../dct.c, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 138, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: ../dct.c, Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 17 }
+Function:        dct
+Args:            
+  - Callee:          Loop_Row_DCT_Loop_proc
+    DebugLoc:        { File: ../dct.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 71, Column: 18 }
+Function:        dct
+Args:            
+  - Callee:          Loop_Xpose_Row_Outer_Loop_proc
+    DebugLoc:        { File: ../dct.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 81, Column: 18 }
+Function:        dct
+Args:            
+  - Callee:          Loop_Col_DCT_Loop_proc
+    DebugLoc:        { File: ../dct.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 87, Column: 18 }
+Function:        dct
+Args:            
+  - Callee:          Loop_Xpose_Col_Outer_Loop_proc
+    DebugLoc:        { File: ../dct.c, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 143, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: ../dct.c, Line: 113, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 129, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

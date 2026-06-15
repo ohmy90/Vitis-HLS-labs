@@ -1,0 +1,6 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline dct/RD_Loop_Col
+set_directive_pipeline dct/DCT_Outer_Loop
+set_directive_pipeline dct/Xpose_Row_Inner_Loop
+set_directive_pipeline dct/Xpose_Col_Inner_Loop
+set_directive_pipeline dct/WR_Loop_Col

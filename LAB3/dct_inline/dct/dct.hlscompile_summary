@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\dct.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "06/14/26 23:26:59",
+ "timestampMillis": "1781494019155",
+ "buildStep": {
+  "cmdId": "d222c9de-44f4-4da8-a2c4-94a5f971b575",
+  "name": "v++",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\logs\\dct.steps.log",
+  "commandLine": "D:/movies/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\hls_config.cfg --work_dir dct ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\hls_config.cfg",
+   "--work_dir",
+   "dct"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\hls_config.cfg",
+    "content": "part=xc7a35tfgg484-2\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=dct\nsyn.file=../dct.c\nsyn.file=../dct.h\ntb.file=../dct_test.c\ntb.file=../in.dat\ntb.file=../out.golden.dat"
+   }
+  ],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 23:26:59",
+ "timestampMillis": "1781494019155",
+ "status": {
+  "cmdId": "d222c9de-44f4-4da8-a2c4-94a5f971b575",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "06/14/26 23:27:03",
+ "timestampMillis": "1781494023409",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct.c",
+     "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "06/14/26 23:27:03",
+ "timestampMillis": "1781494023410",
+ "buildStep": {
+  "cmdId": "76f22071-cc15-4a3e-8876-d19f1b9c6eca",
+  "name": "",
+  "logFile": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 23:27:03",
+ "timestampMillis": "1781494023411",
+ "status": {
+  "cmdId": "76f22071-cc15-4a3e-8876-d19f1b9c6eca",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:03",
+ "timestampMillis": "1781494023411",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:03",
+ "timestampMillis": "1781494023411",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:03",
+ "timestampMillis": "1781494023412",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046806",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046807",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046807",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046808",
+ "status": {
+  "cmdId": "76f22071-cc15-4a3e-8876-d19f1b9c6eca",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046942",
+ "status": {
+  "cmdId": "d222c9de-44f4-4da8-a2c4-94a5f971b575",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046966",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\reports\\v++_compile_dct_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "06/14/26 23:27:26",
+ "timestampMillis": "1781494046967",
+ "report": {
+  "path": "C:/Users\\duong\\Desktop\\xup_high_level_synthesis_design_flow-main\\source\\lab3\\dct_inline\\dct\\reports\\.db\\v++_compile_dct_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,103 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct'.
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-fgg484-2'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dct.c' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../dct.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../dct_test.c' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/dct_test.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=dct' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tfgg484-2' from hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/duong/Desktop/xup_high_level_synthesis_design_flow-main/source/lab3/DCT/dct/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/movies/2025.2/Vitis/win64/tools/clang-16/bin/clang++"
+   Compiling apatb_dct.cpp
+   Compiling dct.c_pre.c.tb.c
+   Compiling dct_test.c_pre.c.tb.c
+   Compiling apatb_dct_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Incorrect output on sample 0. Expected 5765, Received 64 
+Incorrect output on sample 1. Expected 5765, Received 0 
+Incorrect output on sample 2. Expected 5765, Received 0 
+Incorrect output on sample 3. Expected 5765, Received 0 
+Incorrect output on sample 4. Expected 5765, Received 0 
+Incorrect output on sample 5. Expected 5765, Received 0 
+Incorrect output on sample 6. Expected 5765, Received 0 
+Incorrect output on sample 7. Expected 5765, Received 0 
+Incorrect output on sample 8. Expected 5765, Received 0 
+Incorrect output on sample 9. Expected 5765, Received 0 
+Incorrect output on sample 10. Expected 5765, Received 0 
+Incorrect output on sample 11. Expected 5765, Received 0 
+Incorrect output on sample 12. Expected 5765, Received 0 
+Incorrect output on sample 13. Expected 5765, Received 0 
+Incorrect output on sample 14. Expected 5765, Received 0 
+Incorrect output on sample 15. Expected 5765, Received 0 
+Incorrect output on sample 16. Expected 5765, Received 0 
+Incorrect output on sample 17. Expected 5765, Received 0 
+Incorrect output on sample 18. Expected 5765, Received 0 
+Incorrect output on sample 19. Expected 5765, Received 0 
+Incorrect output on sample 20. Expected 5765, Received 0 
+Incorrect output on sample 21. Expected 5765, Received 0 
+Incorrect output on sample 22. Expected 5765, Received 0 
+Incorrect output on sample 23. Expected 5765, Received 0 
+Incorrect output on sample 24. Expected 5765, Received 0 
+Incorrect output on sample 25. Expected 5765, Received 0 
+Incorrect output on sample 26. Expected 5765, Received 0 
+Incorrect output on sample 27. Expected 5765, Received 0 
+Incorrect output on sample 28. Expected 5765, Received 0 
+Incorrect output on sample 29. Expected 5765, Received 0 
+Incorrect output on sample 30. Expected 5765, Received 0 
+Incorrect output on sample 31. Expected 5765, Received 0 
+Incorrect output on sample 32. Expected 5765, Received 0 
+Incorrect output on sample 33. Expected 5765, Received 0 
+Incorrect output on sample 34. Expected 5765, Received 0 
+Incorrect output on sample 35. Expected 5765, Received 0 
+Incorrect output on sample 36. Expected 5765, Received 0 
+Incorrect output on sample 37. Expected 5765, Received 0 
+Incorrect output on sample 38. Expected 5765, Received 0 
+Incorrect output on sample 39. Expected 5765, Received 0 
+Incorrect output on sample 40. Expected 5765, Received 0 
+Incorrect output on sample 41. Expected 5765, Received 0 
+Incorrect output on sample 42. Expected 5765, Received 0 
+Incorrect output on sample 43. Expected 5765, Received 0 
+Incorrect output on sample 44. Expected 5765, Received 0 
+Incorrect output on sample 45. Expected 5765, Received 0 
+Incorrect output on sample 46. Expected 5765, Received 0 
+Incorrect output on sample 47. Expected 5765, Received 0 
+Incorrect output on sample 48. Expected 5765, Received 0 
+Incorrect output on sample 49. Expected 5765, Received 0 
+Incorrect output on sample 50. Expected 5765, Received 0 
+Incorrect output on sample 51. Expected 5765, Received 0 
+Incorrect output on sample 52. Expected 5765, Received 0 
+Incorrect output on sample 53. Expected 5765, Received 0 
+Incorrect output on sample 54. Expected 5765, Received 0 
+Incorrect output on sample 55. Expected 5765, Received 0 
+Incorrect output on sample 56. Expected 5765, Received 0 
+Incorrect output on sample 57. Expected 5765, Received 0 
+Incorrect output on sample 58. Expected 5765, Received 0 
+Incorrect output on sample 59. Expected 5765, Received 0 
+Incorrect output on sample 60. Expected 5765, Received 0 
+Incorrect output on sample 61. Expected 5765, Received 0 
+Incorrect output on sample 62. Expected 5765, Received 0 
+Incorrect output on sample 63. Expected 5765, Received 0 
+    *** *** *** *** 
+    BAD!! 2 
+    *** *** *** *** 
+ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '2'.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.72 seconds; peak allocated memory: 202.090 MB.

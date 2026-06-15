@@ -1,0 +1,1579 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 131, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 133, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 136, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 115, Column: 22 }
+Function:        write_data
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 118, Column: 7 }
+Function:        write_data
+Args:            
+  - String:          'Loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 86, Column: 21 }
+Function:        dct_2d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_86_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 89, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 79, Column: 4 }
+Function:        dct_2d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Col_DCT_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 71, Column: 21 }
+Function:        dct_2d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_71_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 74, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 64, Column: 4 }
+Function:        dct_2d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Row_DCT_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 39, Column: 4 }
+Function:        dct_1d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Outer_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 44, Column: 7 }
+Function:        dct_1d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 100, Column: 22 }
+Function:        read_data
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_100_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../dct.c, Line: 103, Column: 7 }
+Function:        read_data
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_115_1
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:115:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+Function:        write_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        WR_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:118:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          write_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_86_2
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:86:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Col_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:89:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Col_DCT_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:79:4'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_71_1
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:71:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Xpose_Row_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:74:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Row_DCT_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:64:4'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_2d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Outer_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:39:4'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: ../dct.c, Line: 40, Column: 1 }
+Function:        dct_1d
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        DCT_Outer_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:39:4'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:44:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_100_1
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:100:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+Function:        read_data
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RD_Loop_Col
+  - String:          ''' ('
+  - LoopLoc:         '../dct.c:103:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          read_data
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 131, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 133, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 136, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_dct_ir
+Args:            
+  - Callee:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_dct_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 65, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: ../dct.c, Line: 80, Column: 7 }
+Function:        dct_2d
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: ../dct.c, Line: 31, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 126, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           buf_2d_in
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 127, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           buf_2d_out
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 127, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           buf_2d_out
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 55, Column: 15 }
+Function:        dct_2d
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           row_outbuf
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 15 }
+Function:        dct_2d
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           col_outbuf
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 33 }
+Function:        dct_2d
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           col_inbuf
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../dct.c, Line: 55, Column: 15 }
+Function:        dct_2d
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=3 variable=row_outbuf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct_2d
+  - String:          ' '
+  - VarLoc:          '../dct.c:55:15'
+  - String:          ' '
+  - PragmaSrcLoc:    '../dct.c:69:1'
+    DebugLoc:        { File: ../dct.c, Line: 69, Column: 1 }
+  - VarName:         row_outbuf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../dct.c, Line: 69, Column: 1 }
+Function:        dct_2d
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            row_outbuf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 33 }
+Function:        dct_2d
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=col_inbuf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct_2d
+  - String:          ' '
+  - VarLoc:          '../dct.c:56:33'
+  - String:          ' '
+  - PragmaSrcLoc:    '../dct.c:69:1'
+    DebugLoc:        { File: ../dct.c, Line: 69, Column: 1 }
+  - VarName:         col_inbuf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../dct.c, Line: 69, Column: 1 }
+Function:        dct_2d
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            col_inbuf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 15 }
+Function:        dct_2d
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=3 variable=col_outbuf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct_2d
+  - String:          ' '
+  - VarLoc:          '../dct.c:56:15'
+  - String:          ' '
+  - PragmaSrcLoc:    '../dct.c:69:1'
+    DebugLoc:        { File: ../dct.c, Line: 69, Column: 1 }
+  - VarName:         col_outbuf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../dct.c, Line: 69, Column: 1 }
+Function:        dct_2d
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            col_outbuf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 55, Column: 15 }
+Function:        dct_2d
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          row_outbuf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 15 }
+Function:        dct_2d
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_outbuf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 56, Column: 33 }
+Function:        dct_2d
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_inbuf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 126, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf_2d_in
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../dct.c, Line: 127, Column: 10 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf_2d_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 131, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: ../dct.c, Line: 94, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 133, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: ../dct.c, Line: 54, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../dct.c, Line: 136, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: ../dct.c, Line: 109, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: ../dct.c, Line: 124, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

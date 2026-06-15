@@ -1,0 +1,69 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:42:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:69:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:84:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:98:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../dct.c:113:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:115:25" msg_body="Loop 'VITIS_LOOP_115_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_115_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:43:24" msg_body="Loop 'VITIS_LOOP_43_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_43_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../dct.c:100:25" msg_body="Loop 'VITIS_LOOP_100_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_100_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:106:0" msg_body="Unrolling loop 'VITIS_LOOP_115_1' (../dct.c:115:25) in function 'write_data' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:115:25" LoopName="VITIS_LOOP_115_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:31:0" msg_body="Unrolling loop 'VITIS_LOOP_43_1' (../dct.c:43:24) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:43:24" LoopName="VITIS_LOOP_43_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../dct.c:91:0" msg_body="Unrolling loop 'VITIS_LOOP_100_1' (../dct.c:100:25) in function 'read_data' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../dct.c:100:25" LoopName="VITIS_LOOP_100_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../dct.c:121:0" msg_body="Inlining function 'read_data' into 'dct'">
+        <args Callee="read_data" Callee-DebugLoc="File ../dct.c Line 91 Column 0" Caller="dct" Caller-DebugLoc="File ../dct.c Line 121 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../dct.c:121:0" msg_body="Inlining function 'dct_2d' into 'dct'">
+        <args Callee="dct_2d" Callee-DebugLoc="File ../dct.c Line 53 Column 0" Caller="dct" Caller-DebugLoc="File ../dct.c Line 121 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../dct.c:121:0" msg_body="Inlining function 'write_data' into 'dct'">
+        <args Callee="write_data" Callee-DebugLoc="File ../dct.c Line 106 Column 0" Caller="dct" Caller-DebugLoc="File ../dct.c Line 121 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="../dct.c:72:28" msg_body="The program may have out of bound array access on variable 'row_outbuf.i'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="../dct.c:72:26" msg_body="The program may have out of bound array access on variable 'col_inbuf.i'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="../dct.c:87:28" msg_body="The program may have out of bound array access on variable 'col_outbuf.i'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="../dct.c:87:26" msg_body="The program may have out of bound array access on variable 'buf_2d_out'"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../dct.c:71:24" msg_body="pipeline   1 dct config_compile -pipeline_loops 64VITIS_LOOP_71_1 ../dct.c:71:24">
+        <args LoopLoc="../dct.c:71:24" LoopLoc-DebugLoc="File ../dct.c Line 71 Column 24" LoopName="VITIS_LOOP_71_1" PragmaFunction="dct" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../dct.c:86:24" msg_body="pipeline   1 dct config_compile -pipeline_loops 64VITIS_LOOP_86_2 ../dct.c:86:24">
+        <args LoopLoc="../dct.c:86:24" LoopLoc-DebugLoc="File ../dct.c Line 86 Column 24" LoopName="VITIS_LOOP_86_2" PragmaFunction="dct" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../dct.c:34:0" msg_body="Partitioning array 'dct_1d.dct_coeff_table' dimension 2 due to constant index.">
+        <args Dim="2" Value="dct_1d.dct_coeff_table"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="../dct.c:123:10" msg_body="Partitioning array 'buf_2d_in' dimension 2 due to constant index.">
+        <args Dim="2" Value="buf_2d_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:34:0" msg_body="Applying array_partition to 'dct_1d.dct_coeff_table': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="dct_1d.dct_coeff_table"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../dct.c:123:10" msg_body="Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="buf_2d_in"/>
+    </msg>
+</xilinx:hls_fe_msgs>

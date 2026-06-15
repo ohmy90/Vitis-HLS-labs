@@ -1,0 +1,242 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct'
+================================================================
+* Date:           Sun Jun 14 23:27:20 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        dct
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-fgg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.380 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      383|      383|  3.830 us|  3.830 us|  146|  146|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 12, States = { 1 2 3 4 5 6 7 8 9 10 11 12 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%row_outbuf = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 13 'alloca' 'row_outbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%row_outbuf_1 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 14 'alloca' 'row_outbuf_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%row_outbuf_2 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 15 'alloca' 'row_outbuf_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%row_outbuf_3 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 16 'alloca' 'row_outbuf_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%row_outbuf_4 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 17 'alloca' 'row_outbuf_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%row_outbuf_5 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 18 'alloca' 'row_outbuf_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%row_outbuf_6 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 19 'alloca' 'row_outbuf_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%row_outbuf_7 = alloca i64 1" [../dct.c:56->../dct.c:140]   --->   Operation 20 'alloca' 'row_outbuf_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%col_outbuf = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 21 'alloca' 'col_outbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%col_outbuf_1 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 22 'alloca' 'col_outbuf_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%col_outbuf_2 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 23 'alloca' 'col_outbuf_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%col_outbuf_3 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 24 'alloca' 'col_outbuf_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%col_outbuf_4 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 25 'alloca' 'col_outbuf_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%col_outbuf_5 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 26 'alloca' 'col_outbuf_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%col_outbuf_6 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 27 'alloca' 'col_outbuf_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%col_outbuf_7 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 28 'alloca' 'col_outbuf_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%col_inbuf = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 29 'alloca' 'col_inbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%col_inbuf_1 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 30 'alloca' 'col_inbuf_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%col_inbuf_2 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 31 'alloca' 'col_inbuf_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%col_inbuf_3 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 32 'alloca' 'col_inbuf_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%col_inbuf_4 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 33 'alloca' 'col_inbuf_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%col_inbuf_5 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 34 'alloca' 'col_inbuf_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%col_inbuf_6 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 35 'alloca' 'col_inbuf_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%col_inbuf_7 = alloca i64 1" [../dct.c:57->../dct.c:140]   --->   Operation 36 'alloca' 'col_inbuf_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%buf_2d_in = alloca i64 1" [../dct.c:133]   --->   Operation 37 'alloca' 'buf_2d_in' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%buf_2d_in_8 = alloca i64 1" [../dct.c:133]   --->   Operation 38 'alloca' 'buf_2d_in_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%buf_2d_in_9 = alloca i64 1" [../dct.c:133]   --->   Operation 39 'alloca' 'buf_2d_in_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%buf_2d_in_10 = alloca i64 1" [../dct.c:133]   --->   Operation 40 'alloca' 'buf_2d_in_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%buf_2d_in_11 = alloca i64 1" [../dct.c:133]   --->   Operation 41 'alloca' 'buf_2d_in_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%buf_2d_in_12 = alloca i64 1" [../dct.c:133]   --->   Operation 42 'alloca' 'buf_2d_in_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%buf_2d_in_13 = alloca i64 1" [../dct.c:133]   --->   Operation 43 'alloca' 'buf_2d_in_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%buf_2d_in_14 = alloca i64 1" [../dct.c:133]   --->   Operation 44 'alloca' 'buf_2d_in_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%buf_2d_out = alloca i64 1" [../dct.c:134]   --->   Operation 45 'alloca' 'buf_2d_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%buf_2d_out_8 = alloca i64 1" [../dct.c:134]   --->   Operation 46 'alloca' 'buf_2d_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%buf_2d_out_9 = alloca i64 1" [../dct.c:134]   --->   Operation 47 'alloca' 'buf_2d_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%buf_2d_out_10 = alloca i64 1" [../dct.c:134]   --->   Operation 48 'alloca' 'buf_2d_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%buf_2d_out_11 = alloca i64 1" [../dct.c:134]   --->   Operation 49 'alloca' 'buf_2d_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%buf_2d_out_12 = alloca i64 1" [../dct.c:134]   --->   Operation 50 'alloca' 'buf_2d_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%buf_2d_out_13 = alloca i64 1" [../dct.c:134]   --->   Operation 51 'alloca' 'buf_2d_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%buf_2d_out_14 = alloca i64 1" [../dct.c:134]   --->   Operation 52 'alloca' 'buf_2d_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [2/2] (0.00ns)   --->   "%call_ln138 = call void @read_data, i16 %input_r, i16 %buf_2d_in, i16 %buf_2d_in_8, i16 %buf_2d_in_9, i16 %buf_2d_in_10, i16 %buf_2d_in_11, i16 %buf_2d_in_12, i16 %buf_2d_in_13, i16 %buf_2d_in_14" [../dct.c:138]   --->   Operation 53 'call' 'call_ln138' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln138 = call void @read_data, i16 %input_r, i16 %buf_2d_in, i16 %buf_2d_in_8, i16 %buf_2d_in_9, i16 %buf_2d_in_10, i16 %buf_2d_in_11, i16 %buf_2d_in_12, i16 %buf_2d_in_13, i16 %buf_2d_in_14" [../dct.c:138]   --->   Operation 54 'call' 'call_ln138' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 55 [2/2] (0.00ns)   --->   "%call_ln65 = call void @Loop_Row_DCT_Loop_proc, i16 %buf_2d_in, i16 %buf_2d_in_8, i16 %buf_2d_in_9, i16 %buf_2d_in_10, i16 %buf_2d_in_11, i16 %buf_2d_in_12, i16 %buf_2d_in_13, i16 %buf_2d_in_14, i16 %row_outbuf_6, i16 %row_outbuf_5, i16 %row_outbuf_4, i16 %row_outbuf_3, i16 %row_outbuf_2, i16 %row_outbuf_1, i16 %row_outbuf, i16 %row_outbuf_7, i14 %dct_1d_dct_coeff_table_0, i15 %dct_1d_dct_coeff_table_1, i15 %dct_1d_dct_coeff_table_2, i15 %dct_1d_dct_coeff_table_3, i15 %dct_1d_dct_coeff_table_4, i15 %dct_1d_dct_coeff_table_5, i15 %dct_1d_dct_coeff_table_6, i15 %dct_1d_dct_coeff_table_7" [../dct.c:65->../dct.c:140]   --->   Operation 55 'call' 'call_ln65' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.49>
+ST_4 : Operation 56 [1/2] (1.49ns)   --->   "%call_ln65 = call void @Loop_Row_DCT_Loop_proc, i16 %buf_2d_in, i16 %buf_2d_in_8, i16 %buf_2d_in_9, i16 %buf_2d_in_10, i16 %buf_2d_in_11, i16 %buf_2d_in_12, i16 %buf_2d_in_13, i16 %buf_2d_in_14, i16 %row_outbuf_6, i16 %row_outbuf_5, i16 %row_outbuf_4, i16 %row_outbuf_3, i16 %row_outbuf_2, i16 %row_outbuf_1, i16 %row_outbuf, i16 %row_outbuf_7, i14 %dct_1d_dct_coeff_table_0, i15 %dct_1d_dct_coeff_table_1, i15 %dct_1d_dct_coeff_table_2, i15 %dct_1d_dct_coeff_table_3, i15 %dct_1d_dct_coeff_table_4, i15 %dct_1d_dct_coeff_table_5, i15 %dct_1d_dct_coeff_table_6, i15 %dct_1d_dct_coeff_table_7" [../dct.c:65->../dct.c:140]   --->   Operation 56 'call' 'call_ln65' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 57 [2/2] (0.00ns)   --->   "%call_ln71 = call void @Loop_Xpose_Row_Outer_Loop_proc, i16 %col_inbuf_7, i16 %col_inbuf_6, i16 %col_inbuf_5, i16 %col_inbuf_4, i16 %col_inbuf_3, i16 %col_inbuf_2, i16 %col_inbuf_1, i16 %col_inbuf, i16 %row_outbuf, i16 %row_outbuf_1, i16 %row_outbuf_2, i16 %row_outbuf_3, i16 %row_outbuf_4, i16 %row_outbuf_5, i16 %row_outbuf_6, i16 %row_outbuf_7" [../dct.c:71->../dct.c:140]   --->   Operation 57 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln71 = call void @Loop_Xpose_Row_Outer_Loop_proc, i16 %col_inbuf_7, i16 %col_inbuf_6, i16 %col_inbuf_5, i16 %col_inbuf_4, i16 %col_inbuf_3, i16 %col_inbuf_2, i16 %col_inbuf_1, i16 %col_inbuf, i16 %row_outbuf, i16 %row_outbuf_1, i16 %row_outbuf_2, i16 %row_outbuf_3, i16 %row_outbuf_4, i16 %row_outbuf_5, i16 %row_outbuf_6, i16 %row_outbuf_7" [../dct.c:71->../dct.c:140]   --->   Operation 58 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 59 [2/2] (0.00ns)   --->   "%call_ln81 = call void @Loop_Col_DCT_Loop_proc, i16 %col_inbuf, i16 %col_inbuf_1, i16 %col_inbuf_2, i16 %col_inbuf_3, i16 %col_inbuf_4, i16 %col_inbuf_5, i16 %col_inbuf_6, i16 %col_inbuf_7, i16 %col_outbuf_6, i16 %col_outbuf_5, i16 %col_outbuf_4, i16 %col_outbuf_3, i16 %col_outbuf_2, i16 %col_outbuf_1, i16 %col_outbuf, i16 %col_outbuf_7, i14 %dct_1d_dct_coeff_table_0, i15 %dct_1d_dct_coeff_table_1, i15 %dct_1d_dct_coeff_table_2, i15 %dct_1d_dct_coeff_table_3, i15 %dct_1d_dct_coeff_table_4, i15 %dct_1d_dct_coeff_table_5, i15 %dct_1d_dct_coeff_table_6, i15 %dct_1d_dct_coeff_table_7" [../dct.c:81->../dct.c:140]   --->   Operation 59 'call' 'call_ln81' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 1.49>
+ST_8 : Operation 60 [1/2] (1.49ns)   --->   "%call_ln81 = call void @Loop_Col_DCT_Loop_proc, i16 %col_inbuf, i16 %col_inbuf_1, i16 %col_inbuf_2, i16 %col_inbuf_3, i16 %col_inbuf_4, i16 %col_inbuf_5, i16 %col_inbuf_6, i16 %col_inbuf_7, i16 %col_outbuf_6, i16 %col_outbuf_5, i16 %col_outbuf_4, i16 %col_outbuf_3, i16 %col_outbuf_2, i16 %col_outbuf_1, i16 %col_outbuf, i16 %col_outbuf_7, i14 %dct_1d_dct_coeff_table_0, i15 %dct_1d_dct_coeff_table_1, i15 %dct_1d_dct_coeff_table_2, i15 %dct_1d_dct_coeff_table_3, i15 %dct_1d_dct_coeff_table_4, i15 %dct_1d_dct_coeff_table_5, i15 %dct_1d_dct_coeff_table_6, i15 %dct_1d_dct_coeff_table_7" [../dct.c:81->../dct.c:140]   --->   Operation 60 'call' 'call_ln81' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 61 [2/2] (0.00ns)   --->   "%call_ln87 = call void @Loop_Xpose_Col_Outer_Loop_proc, i16 %buf_2d_out_14, i16 %buf_2d_out_13, i16 %buf_2d_out_12, i16 %buf_2d_out_11, i16 %buf_2d_out_10, i16 %buf_2d_out_9, i16 %buf_2d_out_8, i16 %buf_2d_out, i16 %col_outbuf, i16 %col_outbuf_1, i16 %col_outbuf_2, i16 %col_outbuf_3, i16 %col_outbuf_4, i16 %col_outbuf_5, i16 %col_outbuf_6, i16 %col_outbuf_7" [../dct.c:87->../dct.c:140]   --->   Operation 61 'call' 'call_ln87' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 62 [1/2] (0.00ns)   --->   "%call_ln87 = call void @Loop_Xpose_Col_Outer_Loop_proc, i16 %buf_2d_out_14, i16 %buf_2d_out_13, i16 %buf_2d_out_12, i16 %buf_2d_out_11, i16 %buf_2d_out_10, i16 %buf_2d_out_9, i16 %buf_2d_out_8, i16 %buf_2d_out, i16 %col_outbuf, i16 %col_outbuf_1, i16 %col_outbuf_2, i16 %col_outbuf_3, i16 %col_outbuf_4, i16 %col_outbuf_5, i16 %col_outbuf_6, i16 %col_outbuf_7" [../dct.c:87->../dct.c:140]   --->   Operation 62 'call' 'call_ln87' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 63 [2/2] (0.00ns)   --->   "%call_ln143 = call void @write_data, i16 %buf_2d_out, i16 %buf_2d_out_8, i16 %buf_2d_out_9, i16 %buf_2d_out_10, i16 %buf_2d_out_11, i16 %buf_2d_out_12, i16 %buf_2d_out_13, i16 %buf_2d_out_14, i16 %output_r" [../dct.c:143]   --->   Operation 63 'call' 'call_ln143' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 64 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln130 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_0" [../dct.c:130]   --->   Operation 64 'specdataflowpipeline' 'specdataflowpipeline_ln130' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 65 [1/1] (0.00ns)   --->   "%spectopmodule_ln128 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../dct.c:128]   --->   Operation 65 'spectopmodule' 'spectopmodule_ln128' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 67 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r"   --->   Operation 67 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 69 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r"   --->   Operation 69 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln143 = call void @write_data, i16 %buf_2d_out, i16 %buf_2d_out_8, i16 %buf_2d_out_9, i16 %buf_2d_out_10, i16 %buf_2d_out_11, i16 %buf_2d_out_12, i16 %buf_2d_out_13, i16 %buf_2d_out_14, i16 %output_r" [../dct.c:143]   --->   Operation 70 'call' 'call_ln143' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 71 [1/1] (0.00ns)   --->   "%ret_ln144 = ret" [../dct.c:144]   --->   Operation 71 'ret' 'ret_ln144' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 1.491ns
+The critical path consists of the following:
+	'call' operation ('call_ln65', ../dct.c:65->../dct.c:140) to 'Loop_Row_DCT_Loop_proc' [58]  (1.491 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 1.491ns
+The critical path consists of the following:
+	'call' operation ('call_ln81', ../dct.c:81->../dct.c:140) to 'Loop_Col_DCT_Loop_proc' [60]  (1.491 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

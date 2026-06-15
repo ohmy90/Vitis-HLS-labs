@@ -1,0 +1,23 @@
+{
+  "0": {
+    "basicblocks": 43,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 8,
+    "file": "dct.c",
+    "fileloc": 104,
+    "instructions": 388,
+    "loads": {
+      "G": 16,
+      "L": 19,
+      "T": 1
+    },
+    "memory_accesses": 58,
+    "name": "dct",
+    "stores": {
+      "L": 19,
+      "T": 1
+    },
+    "total_instructions": 388
+  }
+}

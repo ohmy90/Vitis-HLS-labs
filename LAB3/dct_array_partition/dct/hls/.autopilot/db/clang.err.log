@@ -1,0 +1,10 @@
+../dct.c:57:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=col_inbuf type=2 dim=2
+                                                    ^
+../dct.c:69:1: warning: multiple compatible 'PIPELINE' pragmas (../dct.c:69:1, ../dct.c:84:1) in the same function scope (dct_2d). Combining them into pragma 'PIPELINE II=1' [-Wignored-hls-pragmas]
+#pragma HLS pipeline II=1
+^
+../dct.c:129:53: warning: unexpected pragma argument '2', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=buf_2d_in type=2
+                                                    ^
+3 warnings generated.

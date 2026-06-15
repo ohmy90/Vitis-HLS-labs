@@ -1,0 +1,222 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dct'
+================================================================
++ General Information: 
+    * Date:           Sun Jun 14 21:44:27 2026
+    * Version:        2025.2 (Build 6295257 on Nov 12 2025)
+    * Project:        dct
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-fgg484-2
+    
+
+* Performance & Resource Estimates: 
++---------------------------------------------+------+---------------------+----------+---------+------+----------+---------+-----------+------+----------+----------+-----------+-----------+-----+
+|                   Modules                   | Issue|                     | Iteration|         | Trip |          |       Latency       |      |          |          |           |           |     |
+|                   & Loops                   | Type |    Violation Type   |  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack|   BRAM   |    DSP   |     FF    |    LUT    | URAM|
++---------------------------------------------+------+---------------------+----------+---------+------+----------+---------+-----------+------+----------+----------+-----------+-----------+-----+
+|+ dct                                        |     -|                    -|         -|      242|     -|        no|      241|  2.410e+03|  0.86|  10 (10%)|  16 (17%)|  1159 (2%)|  1889 (9%)|    -|
+| + dct_Pipeline_RD_Loop_Row                  |     -|                    -|         -|        -|     -|       yes|       34|    340.000|  3.16|         -|         -|   23 (~0%)|  145 (~0%)|    -|
+|  o RD_Loop_Row                              |    II|  Resource Limitation|         5|        4|     8|       yes|       32|    320.000|  7.30|         -|         -|          -|          -|    -|
+| + dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop  |     -|                    -|         -|        -|     -|       yes|       71|    710.000|  0.86|         -|    8 (8%)|  328 (~0%)|   308 (1%)|    -|
+|  o Row_DCT_Loop_DCT_Outer_Loop              |     -|                    -|         7|        1|    64|       yes|       69|    690.000|  7.30|         -|         -|          -|          -|    -|
+| + dct_Pipeline_VITIS_LOOP_71_1              |     -|                    -|         -|        -|     -|       yes|       10|    100.000|  1.60|         -|         -|   11 (~0%)|   78 (~0%)|    -|
+|  o VITIS_LOOP_71_1                          |     -|                    -|         2|        1|     8|       yes|        8|     80.000|  7.30|         -|         -|          -|          -|    -|
+| + dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop  |     -|                    -|         -|        -|     -|       yes|       71|    710.000|  0.86|         -|    8 (8%)|   482 (1%)|   308 (1%)|    -|
+|  o Col_DCT_Loop_DCT_Outer_Loop              |     -|                    -|         7|        1|    64|       yes|       69|    690.000|  7.30|         -|         -|          -|          -|    -|
+| + dct_Pipeline_VITIS_LOOP_86_2              |     -|                    -|         -|        -|     -|       yes|       10|    100.000|  1.60|         -|         -|   11 (~0%)|   78 (~0%)|    -|
+|  o VITIS_LOOP_86_2                          |     -|                    -|         2|        1|     8|       yes|        8|     80.000|  7.30|         -|         -|          -|          -|    -|
+| + dct_Pipeline_WR_Loop_Row                  |     -|                    -|         -|        -|     -|       yes|       34|    340.000|  3.16|         -|         -|   39 (~0%)|  187 (~0%)|    -|
+|  o WR_Loop_Row                              |    II|  Resource Limitation|         5|        4|     8|       yes|       32|    320.000|  7.30|         -|         -|          -|          -|    -|
++---------------------------------------------+------+---------------------+----------+---------+------+----------+---------+-----------+------+----------+----------+-----------+-----------+-----+
+    II Violation Information: docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| input_r_address0  | out       | 6        |
+| input_r_address1  | out       | 6        |
+| input_r_q0        | in        | 16       |
+| input_r_q1        | in        | 16       |
+| output_r_address0 | out       | 6        |
+| output_r_address1 | out       | 6        |
+| output_r_d0       | out       | 16       |
+| output_r_d1       | out       | 16       |
++-------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| input    | in        | short*   |
+| output   | out       | short*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| input    | input_r_address0  | port    | offset   |
+| input    | input_r_ce0       | port    |          |
+| input    | input_r_q0        | port    |          |
+| input    | input_r_address1  | port    | offset   |
+| input    | input_r_ce1       | port    |          |
+| input    | input_r_q1        | port    |          |
+| output   | output_r_address0 | port    | offset   |
+| output   | output_r_ce0      | port    |          |
+| output   | output_r_we0      | port    |          |
+| output   | output_r_d0       | port    |          |
+| output   | output_r_address1 | port    | offset   |
+| output   | output_r_ce1      | port    |          |
+| output   | output_r_we1      | port    |          |
+| output   | output_r_d1       | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------+-----+--------+-------------+--------+-----------+---------+
+| Name                                        | DSP | Pragma | Variable    | Op     | Impl      | Latency |
++---------------------------------------------+-----+--------+-------------+--------+-----------+---------+
+| + dct                                       | 16  |        |             |        |           |         |
+|  + dct_Pipeline_RD_Loop_Row                 | 0   |        |             |        |           |         |
+|    icmp_ln96_fu_263_p2                      |     |        | icmp_ln96   | seteq  | auto      | 0       |
+|    add_ln96_fu_269_p2                       |     |        | add_ln96    | add    | fabric    | 0       |
+|  + dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop | 8   |        |             |        |           |         |
+|    icmp_ln61_fu_332_p2                      |     |        | icmp_ln61   | seteq  | auto      | 0       |
+|    add_ln61_1_fu_338_p2                     |     |        | add_ln61_1  | add    | fabric    | 0       |
+|    add_ln61_fu_347_p2                       |     |        | add_ln61    | add    | fabric    | 0       |
+|    icmp_ln39_fu_353_p2                      |     |        | icmp_ln39   | seteq  | auto      | 0       |
+|    select_ln56_fu_359_p3                    |     |        | select_ln56 | select | auto_sel  | 0       |
+|    select_ln61_fu_367_p3                    |     |        | select_ln61 | select | auto_sel  | 0       |
+|    add_ln47_8_fu_401_p2                     |     |        | add_ln47_8  | add    | fabric    | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U14        | 1   |        | mul_ln47    | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U13       | 1   |        | mul_ln47_1  | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U15        | 1   |        | mul_ln47_2  | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U16        | 1   |        | mul_ln47_3  | mul    | dsp_slice | 3       |
+|    mul_15s_16s_29_1_1_U10                   | 1   |        | mul_ln47_4  | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U17        | 1   |        | mul_ln47_5  | mul    | dsp_slice | 3       |
+|    mul_15s_16s_29_1_1_U11                   | 1   |        | mul_ln47_6  | mul    | auto      | 0       |
+|    mul_14ns_16s_29_1_1_U12                  | 1   |        | mul_ln47_7  | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U14        | 1   |        | add_ln47    | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U17        | 1   |        | add_ln47_1  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U16        | 1   |        | add_ln47_3  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U13       | 1   |        | add_ln47_4  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U15        | 1   |        | add_ln47_5  | add    | dsp_slice | 3       |
+|    add_ln47_6_fu_507_p2                     |     |        | add_ln47_6  | add    | fabric    | 0       |
+|    add_ln39_fu_407_p2                       |     |        | add_ln39    | add    | fabric    | 0       |
+|  + dct_Pipeline_VITIS_LOOP_71_1             | 0   |        |             |        |           |         |
+|    icmp_ln71_fu_75_p2                       |     |        | icmp_ln71   | seteq  | auto      | 0       |
+|    add_ln71_fu_81_p2                        |     |        | add_ln71    | add    | fabric    | 0       |
+|    add_ln72_fu_99_p2                        |     |        | add_ln72    | add    | fabric    | 0       |
+|  + dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop | 8   |        |             |        |           |         |
+|    icmp_ln76_fu_325_p2                      |     |        | icmp_ln76   | seteq  | auto      | 0       |
+|    add_ln76_1_fu_331_p2                     |     |        | add_ln76_1  | add    | fabric    | 0       |
+|    add_ln76_fu_340_p2                       |     |        | add_ln76    | add    | fabric    | 0       |
+|    icmp_ln39_fu_346_p2                      |     |        | icmp_ln39   | seteq  | auto      | 0       |
+|    select_ln56_fu_352_p3                    |     |        | select_ln56 | select | auto_sel  | 0       |
+|    select_ln76_fu_360_p3                    |     |        | select_ln76 | select | auto_sel  | 0       |
+|    add_ln47_fu_492_p2                       |     |        | add_ln47    | add    | fabric    | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U44        | 1   |        | mul_ln47    | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U45       | 1   |        | mul_ln47_8  | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U48        | 1   |        | mul_ln47_9  | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U46        | 1   |        | mul_ln47_10 | mul    | dsp_slice | 3       |
+|    mul_15s_16s_29_1_1_U41                   | 1   |        | mul_ln47_11 | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U47        | 1   |        | mul_ln47_12 | mul    | dsp_slice | 3       |
+|    mul_15s_16s_29_1_1_U42                   | 1   |        | mul_ln47_13 | mul    | auto      | 0       |
+|    mul_14ns_16s_29_1_1_U43                  | 1   |        | mul_ln47_14 | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U44        | 1   |        | add_ln47_8  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U47        | 1   |        | add_ln47_9  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U46        | 1   |        | add_ln47_11 | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U45       | 1   |        | add_ln47_12 | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U48        | 1   |        | add_ln47_13 | add    | dsp_slice | 3       |
+|    add_ln47_14_fu_593_p2                    |     |        | add_ln47_14 | add    | fabric    | 0       |
+|    add_ln39_fu_498_p2                       |     |        | add_ln39    | add    | fabric    | 0       |
+|  + dct_Pipeline_VITIS_LOOP_86_2             | 0   |        |             |        |           |         |
+|    icmp_ln86_fu_75_p2                       |     |        | icmp_ln86   | seteq  | auto      | 0       |
+|    add_ln86_fu_81_p2                        |     |        | add_ln86    | add    | fabric    | 0       |
+|    add_ln87_fu_99_p2                        |     |        | add_ln87    | add    | fabric    | 0       |
+|  + dct_Pipeline_WR_Loop_Row                 | 0   |        |             |        |           |         |
+|    icmp_ln111_fu_212_p2                     |     |        | icmp_ln111  | seteq  | auto      | 0       |
+|    add_ln111_fu_218_p2                      |     |        | add_ln111   | add    | fabric    | 0       |
++---------------------------------------------+-----+--------+-------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------------------+--------------+------+------+------+--------+--------------------------+------+---------+------------------+
+| Name                         | Usage        | Type | BRAM | URAM | Pragma | Variable                 | Impl | Latency | Bitwidth, Depth, |
+|                              |              |      |      |      |        |                          |      |         | Banks            |
++------------------------------+--------------+------+------+------+--------+--------------------------+------+---------+------------------+
+| + dct                        |              |      | 10   | 0    |        |                          |      |         |                  |
+|   row_outbuf_U               | ram_1p array |      | 1    |      |        | row_outbuf               | auto | 1       | 16, 64, 1        |
+|   col_outbuf_U               | ram_1p array |      | 1    |      |        | col_outbuf               | auto | 1       | 16, 64, 1        |
+|   col_inbuf_U                | rom_np array |      | 1    |      |        | col_inbuf                | auto | 1       | 16, 64, 1        |
+|   buf_2d_in_U                | ram_1p array |      |      |      |        | buf_2d_in                | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_8_U              | ram_1p array |      |      |      |        | buf_2d_in_8              | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_9_U              | ram_1p array |      |      |      |        | buf_2d_in_9              | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_10_U             | ram_1p array |      |      |      |        | buf_2d_in_10             | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_11_U             | ram_1p array |      |      |      |        | buf_2d_in_11             | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_12_U             | ram_1p array |      |      |      |        | buf_2d_in_12             | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_13_U             | ram_1p array |      |      |      |        | buf_2d_in_13             | auto | 1       | 16, 8, 1         |
+|   buf_2d_in_14_U             | ram_1p array |      |      |      |        | buf_2d_in_14             | auto | 1       | 16, 8, 1         |
+|   buf_2d_out_U               | rom_np array |      | 1    |      |        | buf_2d_out               | auto | 1       | 16, 64, 1        |
+|   dct_1d_dct_coeff_table_0_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_0 | auto | 1       | 14, 8, 1         |
+|   dct_1d_dct_coeff_table_1_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_1 | auto | 1       | 15, 8, 1         |
+|   dct_1d_dct_coeff_table_2_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_2 | auto | 1       | 15, 8, 1         |
+|   dct_1d_dct_coeff_table_3_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_3 | auto | 1       | 15, 8, 1         |
+|   dct_1d_dct_coeff_table_4_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_4 | auto | 1       | 15, 8, 1         |
+|   dct_1d_dct_coeff_table_5_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_5 | auto | 1       | 15, 8, 1         |
+|   dct_1d_dct_coeff_table_6_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_6 | auto | 1       | 15, 8, 1         |
+|   dct_1d_dct_coeff_table_7_U | rom_1p       |      |      |      |        | dct_1d_dct_coeff_table_7 | auto | 1       | 15, 8, 1         |
++------------------------------+--------------+------+------+------+--------+--------------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Inferred Pragmas
++--------------+---------+------------------------------------------------------------+-------------------------------+
+| Type         | Options | Location                                                   | Inferred From                 |
++--------------+---------+------------------------------------------------------------+-------------------------------+
+| LOOP_FLATTEN |         | loop Row_DCT_Loop (../dct.c:61:4) in dct (../dct.c:61)     | pipeline ../dct.c:42          |
+| LOOP_FLATTEN |         | loop Col_DCT_Loop (../dct.c:76:4) in dct (../dct.c:76)     | pipeline ../dct.c:42          |
+| PIPELINE     |         | loop VITIS_LOOP_71_1 (../dct.c:71:24) in dct (../dct.c:71) | syn.compile.pipeline_loops=64 |
+| PIPELINE     |         | loop VITIS_LOOP_86_2 (../dct.c:86:24) in dct (../dct.c:86) | syn.compile.pipeline_loops=64 |
++--------------+---------+------------------------------------------------------------+-------------------------------+
+
+* Valid Pragma Syntax
++----------+---------+------------------------------+
+| Type     | Options | Location                     |
++----------+---------+------------------------------+
+| PIPELINE | ii=1    | in dct_1d (../dct.c:42)      |
+| PIPELINE | ii=1    | in dct_2d (../dct.c:69)      |
+| PIPELINE | ii=1    | in dct_2d (../dct.c:84)      |
+| PIPELINE | ii=1    | in read_data (../dct.c:98)   |
+| PIPELINE | ii=1    | in write_data (../dct.c:113) |
++----------+---------+------------------------------+
+
+

@@ -1,0 +1,167 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct_Pipeline_WR_Loop_Row'
+================================================================
+* Date:           Sun Jun 14 21:44:26 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        dct
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-fgg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.139 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       34|       34|  0.340 us|  0.340 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- WR_Loop_Row  |       32|       32|         5|          4|          1|     8|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     28|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      0|    159|    -|
+|Register         |        -|   -|     39|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|     39|    187|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  90|  41600|  20800|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|     ~0|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln111_fu_218_p2   |         +|   0|  0|  13|           4|           1|
+    |icmp_ln111_fu_212_p2  |      icmp|   0|  0|  13|           4|           5|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  28|           9|           8|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  21|          5|    1|          5|
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   9|          2|    1|          2|
+    |ap_sig_allocacmp_r_1         |   9|          2|    4|          8|
+    |buf_2d_out_address0_local    |  21|          5|    6|         30|
+    |buf_2d_out_address1_local    |  21|          5|    6|         30|
+    |output_r_address0_local      |  21|          5|    6|         30|
+    |output_r_address1_local      |  21|          5|    6|         30|
+    |r_fu_52                      |   9|          2|    4|          8|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 159|         37|   37|        149|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+---+----+-----+-----------+
+    |             Name            | FF| LUT| Bits| Const Bits|
+    +-----------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                    |  4|   0|    4|          0|
+    |ap_done_reg                  |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |  1|   0|    1|          0|
+    |icmp_ln111_reg_338           |  1|   0|    1|          0|
+    |r_fu_52                      |  4|   0|    4|          0|
+    |trunc_ln111_reg_342          |  3|   0|    3|          0|
+    |zext_ln116_1_reg_362         |  3|   0|   64|         61|
+    |zext_ln116_2_reg_372         |  3|   0|   64|         61|
+    |zext_ln116_3_reg_382         |  3|   0|   64|         61|
+    |zext_ln116_4_reg_392         |  3|   0|   64|         61|
+    |zext_ln116_5_reg_402         |  3|   0|   64|         61|
+    |zext_ln116_6_reg_412         |  3|   0|   64|         61|
+    |zext_ln116_7_reg_422         |  3|   0|   64|         61|
+    |zext_ln116_reg_352           |  3|   0|   64|         61|
+    +-----------------------------+---+----+-----+-----------+
+    |Total                        | 39|   0|  527|        488|
+    +-----------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++---------------------+-----+-----+------------+--------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  dct_Pipeline_WR_Loop_Row|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  dct_Pipeline_WR_Loop_Row|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  dct_Pipeline_WR_Loop_Row|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  dct_Pipeline_WR_Loop_Row|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  dct_Pipeline_WR_Loop_Row|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  dct_Pipeline_WR_Loop_Row|  return value|
+|buf_2d_out_address0  |  out|    6|   ap_memory|                buf_2d_out|         array|
+|buf_2d_out_ce0       |  out|    1|   ap_memory|                buf_2d_out|         array|
+|buf_2d_out_q0        |   in|   16|   ap_memory|                buf_2d_out|         array|
+|buf_2d_out_address1  |  out|    6|   ap_memory|                buf_2d_out|         array|
+|buf_2d_out_ce1       |  out|    1|   ap_memory|                buf_2d_out|         array|
+|buf_2d_out_q1        |   in|   16|   ap_memory|                buf_2d_out|         array|
+|output_r_address0    |  out|    6|   ap_memory|                  output_r|         array|
+|output_r_ce0         |  out|    1|   ap_memory|                  output_r|         array|
+|output_r_we0         |  out|    1|   ap_memory|                  output_r|         array|
+|output_r_d0          |  out|   16|   ap_memory|                  output_r|         array|
+|output_r_address1    |  out|    6|   ap_memory|                  output_r|         array|
+|output_r_ce1         |  out|    1|   ap_memory|                  output_r|         array|
+|output_r_we1         |  out|    1|   ap_memory|                  output_r|         array|
+|output_r_d1          |  out|   16|   ap_memory|                  output_r|         array|
++---------------------+-----+-----+------------+--------------------------+--------------+
+
